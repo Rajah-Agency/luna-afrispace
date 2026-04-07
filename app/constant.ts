@@ -147,23 +147,48 @@ export const blogs = [
 
 export const team = [
   {
-    name: 'Dr. Sarah Omondi',
-    role: 'Director of Space Operations',
-    image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&q=80',
+    name: 'Natasha Moleele',
+    role: 'Founder/President',
+    image: '/images/team-members/natasha-moleele.webp',
   },
   {
-    name: 'Kwame Mensah',
-    role: 'Lead Propulsion Engineer',
-    image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=800&q=80',
+    name: 'Tumo Fortunate Kedumele',
+    role: 'Co-founder/Advisor',
+    image: '/images/team-members/tumo-f.webp',
   },
   {
-    name: 'Aisha Diallo',
-    role: 'Head of Satellite Communications',
-    image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=800&q=80',
+    name: 'Kundai Moyo',
+    role: 'Executive Director',
+    image: '/images/team-members/kundai-moyo.webp',
   },
   {
-    name: 'Tunde Bakare',
-    role: 'Chief Astrodynamicist',
-    image: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=800&q=80',
+    name: 'Rachel Kaze',
+    role: 'Human Resources Department',
+    image: '/images/team-members/rachel-kaze.webp',
+  },
+  {
+    name: 'Francis Ayomide Adedeji',
+    role: 'Public Relations Department',
+    image: '/images/team-members/francis-adedeji.webp',
+  },
+  {
+    name: 'Tswelelo K Mfundisi',
+    role: 'Public Relations Department',
+    image: '/images/team-members/tswelelo-k.webp',
+  },
+  {
+    name: 'Pristine Fulgence',
+    role: 'Public Relations Department',
+    image: '/images/team-members/pristine-f.webp',
+  },
+  {
+    name: 'Dr. Yonnna Laiser',
+    role: 'Operations Department',
+    image: '/images/team-members/yonnna-l.webp',
+  },
+  {
+    name: 'Donald Tembo (ACMA, CGMA)',
+    role: 'Finance Department',
+    image: '/images/team-members/donald-tembo.webp',
   },
 ];

@@ -1,3 +1,5 @@
+'use client';
+
 import { CirclePlayIcon, PlayIcon } from 'lucide-react';
 import { useParallax } from '../hooks/useParallax';
 import { episodes } from '../app/constant';
@@ -6,7 +8,11 @@ export function Podcast() {
   const { ref, offset } = useParallax(0.35);
 
   return (
-    <section ref={ref} id="podcast" className="py-24 md:py-32 relative overflow-hidden">
+    <section
+      ref={ref}
+      id="podcast"
+      className="py-24 md:py-32 relative overflow-hidden border-2"
+    >
       {/* Dark Blue Space Background */}
       <div className="absolute inset-0 z-0">
         <img
