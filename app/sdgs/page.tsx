@@ -1,4 +1,4 @@
-export function SDGs() {
+export default function SDGs() {
   const sdgs = [
     {
       number: 4,

@@ -1,7 +1,8 @@
+import Image from 'next/image';
 import { MissionVision } from '../../components/mission';
 import { team } from '../constant';
 
-export function About() {
+export default function About() {
   const values = [
     {
       title: 'INNOVATION',
@@ -24,6 +25,7 @@ export function About() {
         'Ensuring our exploration of space benefits both humanity and the planet for generations to come.',
     },
   ];
+
   return (
     <main className="pt-32 pb-24">
       <div className="container mx-auto px-6 mb-16 text-center">
@@ -88,7 +90,7 @@ export function About() {
                 className="group relative overflow-hidden border border-luna-royal-blue/30 bg-luna-deep-navy/40 backdrop-blur-sm hover:border-luna-glow-blue transition-all duration-500"
               >
                 <div className="aspect-3/4 overflow-hidden">
-                  <img
+                  <Image
                     src={member.image}
                     alt={member.name}
                     className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 scale-100 group-hover:scale-110"

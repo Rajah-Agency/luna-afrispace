@@ -2,7 +2,7 @@ import { MapPinIcon, MailIcon, PhoneIcon } from 'lucide-react';
 
 import { FaXTwitter, FaLinkedin, FaInstagram, FaYoutube } from 'react-icons/fa6';
 
-export function Contact() {
+export default function Contact() {
   return (
     <main className="pt-32 pb-24 min-h-screen relative overflow-hidden">
       {/* Background elements */}

@@ -1,4 +1,4 @@
-import { Podcast } from 'lucide-react';
+import { Podcast } from '@/components/podcasts';
 import { LunaAcronym } from '../components/acronyms';
 import { Events } from '../components/events';
 import { Hero } from '../components/hero';

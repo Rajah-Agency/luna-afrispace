@@ -1,4 +1,4 @@
-export function PastEvents() {
+export default function PastEvents() {
   const events = [
     {
       id: 1,
