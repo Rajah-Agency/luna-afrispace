@@ -1,6 +1,6 @@
 import { CirclePlayIcon, PlayIcon } from 'lucide-react';
 import { useParallax } from '../hooks/useParallax';
-import { episodes } from '../constant';
+import { episodes } from '../app/constant';
 
 export function Podcast() {
   const { ref, offset } = useParallax(0.35);

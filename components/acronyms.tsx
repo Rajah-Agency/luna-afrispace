@@ -1,6 +1,6 @@
 'use client';
 import { useEffect, useState } from 'react';
-import { slides } from '../constant';
+import { slides } from '../app/constant';
 
 export function LunaAcronym() {
   const [currentSlide, setCurrentSlide] = useState(0);

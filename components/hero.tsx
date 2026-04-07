@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import { ChevronDownIcon } from 'lucide-react';
 import { StarField } from './star-field';
 import { useParallax } from '../hooks/useParallax';
-import { HERO_IMAGES } from '../constant';
+import { HERO_IMAGES } from '../app/constant';
 
 export function Hero() {
   const { ref, offset } = useParallax(0.3);

@@ -1,5 +1,5 @@
 'use client';
-import { events } from '../constant';
+import { events } from '../app/constant';
 import { useParallax } from '../hooks/useParallax';
 
 export function Events() {
