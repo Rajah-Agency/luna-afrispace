@@ -1,6 +1,12 @@
 import { MapPinIcon, MailIcon, PhoneIcon } from 'lucide-react';
 
-import { FaXTwitter, FaLinkedin, FaInstagram, FaYoutube } from 'react-icons/fa6';
+import {
+  FaXTwitter,
+  FaLinkedin,
+  FaInstagram,
+  FaYoutube,
+  FaFacebook,
+} from 'react-icons/fa6';
 
 export default function Contact() {
   return (
@@ -12,11 +18,12 @@ export default function Contact() {
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center mb-16">
           <h1 className="font-heading text-5xl md:text-7xl text-white mb-6 tracking-widest text-glow">
-            ESTABLISH COMMS
+            CONTACT US
           </h1>
           <p className="font-body text-xl text-luna-muted-steel max-w-2xl mx-auto">
-            Reach out to our mission control center. We're always looking for new
-            partners, researchers, and space enthusiasts.
+            We’re always ready to connect with you. Whether you have questions, feedback,
+            partnership opportunities, or simply want to learn more, our team is here to
+            listen and respond.
           </p>
         </div>
 
@@ -30,7 +37,7 @@ export default function Contact() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="space-y-2">
                   <label className="font-heading text-sm tracking-widest text-luna-muted-steel">
-                    DESIGNATION (NAME)
+                    NAME
                   </label>
                   <input
                     type="text"
@@ -40,7 +47,7 @@ export default function Contact() {
                 </div>
                 <div className="space-y-2">
                   <label className="font-heading text-sm tracking-widest text-luna-muted-steel">
-                    COMMS CHANNEL (EMAIL)
+                    EMAIL
                   </label>
                   <input
                     type="email"
@@ -140,7 +147,16 @@ export default function Contact() {
               </h2>
               <div className="flex space-x-4">
                 <a
-                  href="#"
+                  href="https://www.facebook.com/lunaafrispace"
+                  className="w-14 h-14 bg-luna-deep-navy/50 border border-luna-royal-blue/50 flex items-center justify-center text-luna-muted-steel hover:text-white hover:border-luna-glow-blue hover:bg-luna-royal-blue/20 transition-all group"
+                >
+                  <FaFacebook
+                    size={24}
+                    className="group-hover:scale-110 transition-transform"
+                  />
+                </a>
+                <a
+                  href="https://twitter.com/lunaafrispace"
                   className="w-14 h-14 bg-luna-deep-navy/50 border border-luna-royal-blue/50 flex items-center justify-center text-luna-muted-steel hover:text-white hover:border-luna-glow-blue hover:bg-luna-royal-blue/20 transition-all group"
                 >
                   <FaXTwitter
@@ -149,7 +165,7 @@ export default function Contact() {
                   />
                 </a>
                 <a
-                  href="#"
+                  href="https://www.linkedin.com/company/lunafrispace-agency"
                   className="w-14 h-14 bg-luna-deep-navy/50 border border-luna-royal-blue/50 flex items-center justify-center text-luna-muted-steel hover:text-white hover:border-luna-glow-blue hover:bg-luna-royal-blue/20 transition-all group"
                 >
                   <FaLinkedin
@@ -166,7 +182,7 @@ export default function Contact() {
                     className="group-hover:scale-110 transition-transform"
                   />
                 </a>
-                <a
+                {/* <a
                   href="#"
                   className="w-14 h-14 bg-luna-deep-navy/50 border border-luna-royal-blue/50 flex items-center justify-center text-luna-muted-steel hover:text-white hover:border-luna-glow-blue hover:bg-luna-royal-blue/20 transition-all group"
                 >
@@ -174,7 +190,7 @@ export default function Contact() {
                     size={24}
                     className="group-hover:scale-110 transition-transform"
                   />
-                </a>
+                </a> */}
               </div>
             </div>
           </div>
