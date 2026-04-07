@@ -28,11 +28,6 @@ export default function Newsletters() {
                   alt={blog.title}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                 />
-                <div className="absolute top-4 left-4 bg-luna-bg/80 backdrop-blur-sm px-3 py-1 border border-luna-royal-blue/50">
-                  <span className="font-heading text-xs tracking-widest text-luna-glow-blue">
-                    {blog.category}
-                  </span>
-                </div>
               </div>
               <div className="p-8 flex flex-col grow">
                 <span className="font-body text-sm text-luna-muted-steel mb-3">

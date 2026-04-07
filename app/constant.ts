@@ -114,38 +114,26 @@ export const episodes = [
 export const blogs = [
   {
     id: 1,
-    title: 'The Future of African Satellite Constellations',
-    date: 'October 15, 2026',
-    excerpt:
-      'How emerging nations are collaborating to build a unified orbital communication network.',
-    image: 'https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?w=800&q=80',
-    category: 'Technology',
+    title: 'L.U.N.A. - To The Stars and Beyond ✨',
+    date: 'October 31, 2025',
+    excerpt: 'October Space Week  Recap + African Space Highlights October marked...',
+    image: '/images/blogs/stars-and-beyond.webp',
   },
   {
     id: 2,
-    title: 'Student Launchpad: Meet the Next Generation',
-    date: 'September 28, 2026',
+    title: 'October: The Month for Space! 🛰️',
+    date: 'October 22, 2025',
     excerpt:
       'Highlighting the brilliant minds from our recent university partnership program.',
-    image: 'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=800&q=80',
-    category: 'Education',
+    image: '/images/blogs/october-month.webp',
   },
   {
     id: 3,
-    title: 'Sustainable Space Exploration',
-    date: 'September 10, 2026',
+    title: 'Building a Diverse Future in Space',
+    date: 'October 8, 2025',
     excerpt:
       'Our commitment to minimizing orbital debris and promoting eco-friendly propulsion.',
-    image: 'https://images.unsplash.com/photo-1614730321146-b6fa6a46bcb4?w=800&q=80',
-    category: 'Sustainability',
-  },
-  {
-    id: 4,
-    title: 'New Equatorial Launch Site Announced',
-    date: 'August 22, 2026',
-    excerpt: 'Strategic advantages of our new facility for reaching geostationary orbit.',
-    image: 'https://images.unsplash.com/photo-1541185933-ef5d8ed016c2?w=800&q=80',
-    category: 'Infrastructure',
+    image: '/images/blogs/building-diverse-future.webp',
   },
 ];
 
