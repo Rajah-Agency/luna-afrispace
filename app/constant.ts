@@ -118,6 +118,7 @@ export const blogs = [
     date: 'October 31, 2025',
     excerpt: 'October Space Week  Recap + African Space Highlights October marked...',
     image: '/images/blogs/stars-and-beyond.webp',
+    link: '/newsletters/luna-to-the-stars-and-beyond',
   },
   {
     id: 2,
@@ -126,6 +127,7 @@ export const blogs = [
     excerpt:
       'Highlighting the brilliant minds from our recent university partnership program.',
     image: '/images/blogs/october-month.webp',
+    link: '/newsletters/october-the-month-for-space',
   },
   {
     id: 3,
@@ -134,6 +136,7 @@ export const blogs = [
     excerpt:
       'Our commitment to minimizing orbital debris and promoting eco-friendly propulsion.',
     image: '/images/blogs/building-diverse-future.webp',
+    link: '/newsletters/building-a-diverse-future-in-space',
   },
 ];
 

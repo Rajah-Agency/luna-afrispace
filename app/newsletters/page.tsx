@@ -1,5 +1,6 @@
 import { ArrowRightIcon } from 'lucide-react';
 import { blogs } from '../constant';
+import Link from 'next/link';
 
 export default function Newsletters() {
   return (
@@ -17,9 +18,9 @@ export default function Newsletters() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
           {blogs.map((blog) => (
-            <a
+            <Link
               key={blog.id}
-              href={`#blog-${blog.id}`}
+              href={blog.link}
               className="group flex flex-col bg-luna-deep-navy/30 border border-luna-royal-blue/30 hover:border-luna-glow-blue transition-all duration-300 overflow-hidden"
             >
               <div className="aspect-video overflow-hidden relative">
@@ -47,7 +48,7 @@ export default function Newsletters() {
                   />
                 </div>
               </div>
-            </a>
+            </Link>
           ))}
         </div>
       </div>
