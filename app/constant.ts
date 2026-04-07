@@ -39,17 +39,17 @@ export const slides = [
   {
     letter: 'U',
     word: 'UNIFIED',
-    image: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1920&q=80',
+    image: '/images/acronyms/a-1.webp',
   },
   {
     letter: 'N',
     word: 'NEXUS',
-    image: 'https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?w=1920&q=80',
+    image: '/images/acronyms/a-3.webp',
   },
   {
     letter: 'A',
     word: 'AFRISPACE',
-    image: 'https://images.unsplash.com/photo-1534796636912-3b95b3ab5986?w=1920&q=80',
+    image: '/images/acronyms/a-6.jpg',
   },
   {
     letter: 'L.U.N.A',

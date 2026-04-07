@@ -4,6 +4,7 @@ import { ChevronDownIcon } from 'lucide-react';
 import { StarField } from './star-field';
 import { useParallax } from '../hooks/useParallax';
 import { HERO_IMAGES } from '../app/constant';
+import Image from 'next/image';
 
 export function Hero() {
   const { ref, offset } = useParallax(0.3);
@@ -13,7 +14,7 @@ export function Hero() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImageIndex((prev) => (prev + 1) % HERO_IMAGES.length);
-    }, 6000);
+    }, 5000);
     return () => clearInterval(interval);
   }, []);
 
@@ -30,9 +31,11 @@ export function Hero() {
         }}
       >
         {HERO_IMAGES.map((src, index) => (
-          <img
+          <Image
             key={src}
             src={src}
+            fill
+            priority
             alt=""
             className="absolute inset-0 w-full h-full object-cover will-change-transform"
             style={{
@@ -42,7 +45,7 @@ export function Hero() {
             }}
           />
         ))}
-        <div className="absolute inset-0 bg-luna-bg/40" />
+        {/* <div className="absolute inset-0 bg-luna-bg/40" /> */}
         <div className="absolute inset-0 bg-linear-to-b from-luna-bg/50 via-transparent to-luna-bg/60" />
       </div>
       <StarField />

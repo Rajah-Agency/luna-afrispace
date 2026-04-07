@@ -8,11 +8,7 @@ export function Podcast() {
   const { ref, offset } = useParallax(0.35);
 
   return (
-    <section
-      ref={ref}
-      id="podcast"
-      className="py-24 md:py-32 relative overflow-hidden border-2"
-    >
+    <section ref={ref} id="podcast" className="py-24 md:py-32 relative overflow-hidden">
       {/* Dark Blue Space Background */}
       <div className="absolute inset-0 z-0">
         <img
