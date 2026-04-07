@@ -1,26 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;700&display=swap');
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@theme {
+  /* Colors */
+  --color-luna-bg: #000000;
+  --color-luna-deep-navy: #0a0a0a;
+  --color-luna-royal-blue: #333333;
+  --color-luna-bright-blue: #ffffff;
+  --color-luna-glow-blue: #cccccc;
+  --color-luna-ice-white: #ffffff;
+  --color-luna-muted-steel: #888888;
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  /* Fonts */
+  --font-heading: "Barlow Condensed", sans-serif;
+  --font-body: "DM Sans", sans-serif;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  /* Animations & Keyframes */
+  --animate-float: float 6s ease-in-out infinite;
+  --animate-float-slow: float 10s ease-in-out infinite;
+  --animate-orbit: orbit 20s linear infinite;
+  --animate-orbit-slow: orbit 60s linear infinite;
+  --animate-twinkle: twinkle 4s ease-in-out infinite;
+  --animate-pulse-glow: pulse-glow 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+
+  @keyframes float {
+
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+
+  @keyframes orbit {
+    from {
+      transform: rotate(0deg);
+    }
+
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes twinkle {
+
+    0%,
+    100% {
+      opacity: 1;
+    }
+
+    50% {
+      opacity: 0.2;
+    }
+  }
+
+  @keyframes pulse-glow {
+
+    0%,
+    100% {
+      opacity: 1;
+      filter: brightness(1);
+    }
+
+    50% {
+      opacity: 0.8;
+      filter: brightness(1.5);
+    }
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@layer base {
+  :root {
+    --background: #000000;
+    --foreground: #ffffff;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--color-luna-bg);
+    color: var(--color-luna-ice-white);
+    font-family: var(--font-body);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+  }
+
+  /* Selection styling in v4 */
+  ::selection {
+    background-color: var(--color-luna-muted-steel);
+    color: #000000;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-heading);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    /* tracking-wider */
+  }
+}
+
+@layer utilities {
+  .text-glow {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+  }
+
+  .text-glow-strong {
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.4), 0 0 40px rgba(200, 200, 200, 0.2);
+  }
+
+  .box-glow {
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.15);
+  }
+
+  .box-glow-strong {
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.25);
+  }
+
+  .border-glow {
+    border-color: var(--color-luna-glow-blue);
+    box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.1), 0 0 10px rgba(255, 255, 255, 0.1);
+  }
 }
