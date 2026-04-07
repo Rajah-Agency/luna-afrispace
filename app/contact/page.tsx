@@ -26,7 +26,7 @@ export default function Contact() {
             <h2 className="font-heading text-2xl text-white mb-8 tracking-widest border-b border-luna-royal-blue/30 pb-4">
               SEND TRANSMISSION
             </h2>
-            <form className="space-y-6" onSubmit={(e) => e.preventDefault()}>
+            <form className="space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="space-y-2">
                   <label className="font-heading text-sm tracking-widest text-luna-muted-steel">

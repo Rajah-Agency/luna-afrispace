@@ -12,8 +12,12 @@ export const navLinks = [
     href: '/contact',
   },
   {
-    name: 'About SDGs',
-    href: '/about-sdgs',
+    name: 'About',
+    href: '/about',
+  },
+  {
+    name: 'SDGs',
+    href: '/sdgs',
   },
   {
     name: 'Past Events',

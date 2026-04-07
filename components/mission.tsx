@@ -30,10 +30,8 @@ export function MissionVision() {
               OUR MISSION
             </h2>
             <p className="font-body text-lg text-luna-muted-steel leading-relaxed">
-              To democratize space access for the African continent. We provide the
-              infrastructure, education, and global connections necessary to ensure Africa
-              is an active participant and leader in the exploration and utilization of
-              space.
+              Position Africa in the global space race by equipping people with the
+              necessary skills and knowledge about space.
             </p>
           </div>
 
@@ -45,9 +43,10 @@ export function MissionVision() {
               OUR VISION
             </h2>
             <p className="font-body text-lg text-luna-muted-steel leading-relaxed">
-              A future where African innovation drives the next era of cosmic discovery.
-              We envision a unified network of African spaceports, research hubs, and
-              orbital assets managed by the next generation of African pioneers.
+              Putting Africans at the forefront of the space race in the world and Africa.
+              Showing Africa and the world that they don&apos;t have to be left behind and
+              to show that LUNA encompasses areas such as STEM, medicine, humanities ,
+              tech, AI , space science , astronautics and aerospace.
             </p>
           </div>
         </div>
