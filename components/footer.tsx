@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { FaXTwitter, FaLinkedin, FaInstagram, FaYoutube } from 'react-icons/fa6';
 
 export function Footer() {
@@ -87,42 +88,50 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Resources Col */}
+          {/* Social Links */}
           <div>
             <h4 className="font-heading tracking-widest text-luna-ice-white mb-6">
-              RESOURCES
+              Social
             </h4>
             <ul className="space-y-3">
               <li>
-                <a
-                  href="#"
+                <Link
+                  href="/newsletters"
                   className="font-body text-sm text-luna-muted-steel hover:text-luna-glow-blue transition-colors"
                 >
-                  Blog & News
+                  Blog
+                </Link>
+              </li>
+              <li>
+                <a
+                  href="https://x.com/lunaAFRISPACE"
+                  className="font-body text-sm text-luna-muted-steel hover:text-luna-glow-blue transition-colors"
+                >
+                  X
                 </a>
               </li>
               <li>
                 <a
-                  href="#"
+                  href="https://www.linkedin.com/company/lunafrispace-agency"
                   className="font-body text-sm text-luna-muted-steel hover:text-luna-glow-blue transition-colors"
                 >
-                  Research Papers
+                  Linkedin
                 </a>
               </li>
               <li>
                 <a
-                  href="#"
+                  href="https://www.facebook.com/share/1EEB18BG59/?mibextid=wwXIfr"
                   className="font-body text-sm text-luna-muted-steel hover:text-luna-glow-blue transition-colors"
                 >
-                  Partners
+                  Facebook
                 </a>
               </li>
               <li>
                 <a
-                  href="#"
+                  href="https://www.instagram.com/lunaafrispace/"
                   className="font-body text-sm text-luna-muted-steel hover:text-luna-glow-blue transition-colors"
                 >
-                  Press Kit
+                  Instagram
                 </a>
               </li>
             </ul>
