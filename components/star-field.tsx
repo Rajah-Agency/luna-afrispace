@@ -1,31 +1,17 @@
-import React, { useMemo } from 'react';
-export function StarField() {
-  const stars = useMemo(() => {
-    return Array.from({
-      length: 150,
-    }).map((_, i) => {
-      // Use a pseudo-random approach based on index to keep it stable across renders
-      const x = Math.random() * 100;
-      const y = Math.random() * 100;
-      const size = Math.random() * 2 + 0.5;
-      const opacity = Math.random() * 0.6 + 0.2;
-      const delay = Math.random() * 5;
-      const duration = Math.random() * 3 + 2;
-      return {
-        id: i,
-        x,
-        y,
-        size,
-        opacity,
-        delay,
-        duration,
-      };
-    });
-  }, []);
+const STARS = Array.from({ length: 150 }, (_, i) => ({
+  id: i,
+  x: (i * 13.7 + 7.3) % 100,
+  y: (i * 17.3 + 3.1) % 100,
+  size: 0.5 + (i * 0.37) % 2,
+  opacity: 0.2 + (i * 0.13) % 0.6,
+  delay: (i * 0.37) % 5,
+  duration: 2 + (i * 0.41) % 3,
+}));
 
+export function StarField() {
   return (
     <div className="absolute inset-0 overflow-hidden pointer-events-none z-0">
-      {stars.map((star) => (
+      {STARS.map((star) => (
         <div
           key={star.id}
           className="absolute rounded-full bg-luna-ice-white animate-twinkle"

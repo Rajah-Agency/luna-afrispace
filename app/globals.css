@@ -3,10 +3,9 @@
 
 @theme {
   /* Colors */
-  --color-luna-bg: #000000;
-  --color-luna-deep-navy: #0a0a0a;
-  --color-luna-royal-blue: #333333;
-  --color-luna-bright-blue: #ffffff;
+  --color-luna-bg: #01224c;
+  --color-luna-deep-navy: #012147;
+  --color-luna-royal-blue: #2E6EA6;
   --color-luna-glow-blue: #cccccc;
   --color-luna-ice-white: #ffffff;
   --color-luna-muted-steel: #888888;
@@ -22,6 +21,7 @@
   --animate-orbit-slow: orbit 60s linear infinite;
   --animate-twinkle: twinkle 4s ease-in-out infinite;
   --animate-pulse-glow: pulse-glow 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  --animate-shimmer: shimmer 1.5s infinite;
 
   @keyframes float {
 
@@ -68,6 +68,12 @@
     50% {
       opacity: 0.8;
       filter: brightness(1.5);
+    }
+  }
+
+  @keyframes shimmer {
+    100% {
+      transform: translateX(100%);
     }
   }
 }

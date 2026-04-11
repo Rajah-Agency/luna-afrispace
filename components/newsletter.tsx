@@ -29,7 +29,7 @@ export function Newsletter() {
           <h2 className="font-heading text-5xl md:text-7xl text-luna-ice-white tracking-widest mb-6 text-glow">
             STAY IN ORBIT
           </h2>
-          <p className="font-body text-xl text-white mb-12">
+          <p className="font-body text-xl text-white mb-12 font-medium">
             Get mission updates, event alerts, and stories from Africa's space frontier.
           </p>
 
@@ -41,17 +41,17 @@ export function Newsletter() {
               type="email"
               placeholder="your@email.com"
               required
-              className="grow bg-luna-deep-navy/70 backdrop-blur-md border border-luna-royal-blue px-6 py-4 font-body text-luna-ice-white placeholder:text-luna-muted-steel/50 focus:outline-none focus:border-luna-glow-blue focus:box-glow transition-all"
+              className="grow bg-luna-deep-navy/70 backdrop-blur-md border border-luna-royal-blue px-6 py-4 font-body text-luna-ice-white placeholder:text-white/50 focus:outline-none focus:border-luna-glow-blue focus:box-glow transition-all"
             />
             <button
               type="submit"
-              className="bg-luna-bright-blue text-luna-bg font-heading tracking-widest text-lg px-8 py-4 hover:bg-luna-glow-blue hover:text-luna-bg hover:box-glow transition-all whitespace-nowrap"
+              className="bg-white text-luna-bg font-heading tracking-widest text-lg px-8 py-4 hover:bg-luna-glow-blue hover:text-luna-bg hover:box-glow transition-all whitespace-nowrap"
             >
               SUBSCRIBE
             </button>
           </form>
 
-          <p className="font-body text-sm text-white">
+          <p className="font-body text-md font-medium text-white">
             Join 2,000+ space enthusiasts across the continent.
           </p>
         </div>

@@ -10,7 +10,7 @@ function DefaultArticleContent() {
         October Space Week Recap + African Space Highlights
       </h2>
 
-      <p className="font-body text-lg text-luna-muted-steel leading-relaxed mb-8">
+      <p className="font-body text-lg text-white leading-relaxed mb-8">
         October marked World Space Week, and at L.U.N.A. (Loapi Unified Nexus Afrispace
         Agency), we joined the celebration in our own grounded yet cosmic way by expanding
         knowledge, community, and vision. In case you missed last October's publication,
@@ -23,7 +23,7 @@ function DefaultArticleContent() {
         </a>
       </p>
 
-      <p className="font-body text-lg text-luna-muted-steel leading-relaxed mb-12">
+      <p className="font-body text-lg text-white leading-relaxed mb-12">
         This month's L.U.N.A. Space Dialogue Webinar brought together learners, engineers,
         policymakers, dreamers, and builders across Africa and the diaspora. Together, we
         explored what it means for Africa not just to participate in space, but to lead in
@@ -39,7 +39,7 @@ function DefaultArticleContent() {
         🌍 Quick Meeting Recap
       </h3>
 
-      <p className="font-body text-lg text-luna-muted-steel leading-relaxed mb-8">
+      <p className="font-body text-lg text-white leading-relaxed mb-8">
         We opened with warm introductions and light-hearted weather conversations from
         Paris to Cape Town (yes, even penguins were mentioned 🐧). From there, we went
         deep: What is L.U.N.A.? L.U.N.A. is committed to building African capacity in
@@ -60,43 +60,43 @@ function DefaultArticleContent() {
       <table className="table-auto w-full my-3 border border-white/30">
         <tbody>
           <tr className="border border-white/30">
-            <td className="font-body text-lg text-luna-muted-steel p-3 border border-white/30">
+            <td className="font-body text-lg text-white p-3 border border-white/30">
               Focus Area
             </td>
-            <td className="font-body text-lg text-luna-muted-steel p-3 border border-white/30">
+            <td className="font-body text-lg text-white p-3 border border-white/30">
               What We Explored
             </td>
           </tr>
           <tr className="border border-white/30">
-            <td className="font-body text-lg text-luna-muted-steel p-3 border border-white/30">
+            <td className="font-body text-lg text-white p-3 border border-white/30">
               Africa in Global Space Governance
             </td>
-            <td className="font-body text-lg text-luna-muted-steel p-3 border border-white/30">
+            <td className="font-body text-lg text-white p-3 border border-white/30">
               The rise of Africa's voice in a new multipolar space world.
             </td>
           </tr>
           <tr className="border border-white/30">
-            <td className="font-body text-lg text-luna-muted-steel p-3 border border-white/30">
+            <td className="font-body text-lg text-white p-3 border border-white/30">
               Space Policy &amp; Legal Frameworks
             </td>
-            <td className="font-body text-lg text-luna-muted-steel p-3 border border-white/30">
+            <td className="font-body text-lg text-white p-3 border border-white/30">
               Why compliance, treaties, national laws &amp; ESG matter.
             </td>
           </tr>
           <tr className="border border-white/30">
-            <td className="font-body text-lg text-luna-muted-steel p-3 border border-white/30">
+            <td className="font-body text-lg text-white p-3 border border-white/30">
               Infrastructure &amp; Launch Ambitions
             </td>
-            <td className="font-body text-lg text-luna-muted-steel p-3 border border-white/30">
+            <td className="font-body text-lg text-white p-3 border border-white/30">
               Platforms in Kenya, opportunities in Djibouti, and growing satellite
               programs.
             </td>
           </tr>
           <tr className="border border-white/30">
-            <td className="font-body text-lg text-luna-muted-steel p-3 border border-white/30">
+            <td className="font-body text-lg text-white p-3 border border-white/30">
               Capacity Building &amp; Education
             </td>
-            <td className="font-body text-lg text-luna-muted-steel p-3 border border-white/30">
+            <td className="font-body text-lg text-white p-3 border border-white/30">
               The power of mentorship, technical committees, and interdisciplinary
               learning.
             </td>
@@ -104,11 +104,11 @@ function DefaultArticleContent() {
         </tbody>
       </table>
 
-      <p className="font-body text-lg text-luna-muted-steel leading-relaxed mb-8">
+      <p className="font-body text-lg text-white leading-relaxed mb-8">
         We also dived into:
       </p>
 
-      <ul className="font-body text-lg text-luna-muted-steel leading-relaxed mb-8 list-disc list-inside space-y-2">
+      <ul className="font-body text-lg text-white leading-relaxed mb-8 list-disc list-inside space-y-2">
         <li>Space debris mitigation standards (ISO 24113, IADC guidelines)</li>
         <li>The importance of transparent and ethical procurement</li>
         <li>Africa's demographic advantage and talent pipeline</li>
@@ -123,7 +123,7 @@ function DefaultArticleContent() {
           height={1080}
           className="w-full aspect-21/9 object-cover border border-luna-royal-blue/30"
         />
-        <figcaption className="font-body text-sm text-luna-muted-steel/70 mt-3 text-center italic">
+        <figcaption className="font-body text-sm text-white/70 mt-3 text-center italic">
           Picture Snippets
         </figcaption>
       </figure>
@@ -132,7 +132,7 @@ function DefaultArticleContent() {
         🎮 The Interactive Fun Part
       </h3>
 
-      <p className="font-body text-lg text-luna-muted-steel leading-relaxed mb-8">
+      <p className="font-body text-lg text-white leading-relaxed mb-8">
         We tried something new: a Menti Quiz Icebreaker 🥳😊👌🥳. Let’s just say…
         competitive spirit was very alive. Shoutout to everyone who surprised themselves
         with their knowledge and quick thinking 💫
@@ -142,7 +142,7 @@ function DefaultArticleContent() {
         📺 Replay the Webinar
       </h3>
 
-      <p className="font-body text-lg text-luna-muted-steel leading-relaxed mb-8">
+      <p className="font-body text-lg text-white leading-relaxed mb-8">
         Missed it? No worries: catch the{' '}
         <a
           className="text-blue-500 underline"
@@ -168,7 +168,7 @@ function DefaultArticleContent() {
           height={1080}
           className="w-full aspect-21/9 object-cover border border-luna-royal-blue/30"
         />
-        <figcaption className="font-body text-sm text-luna-muted-steel/70 mt-3 text-center italic">
+        <figcaption className="font-body text-sm text-white/70 mt-3 text-center italic">
           Dr. Zolana Joao, D.Eng (Left), signing Memorandum of Understanding between
           <a
             href="https://www.linkedin.com/in/ggpen-angola-10a2811b5/"
@@ -195,35 +195,35 @@ function DefaultArticleContent() {
         </figcaption>
       </figure>
 
-      <p className="font-body text-lg text-luna-muted-steel leading-relaxed mb-4">
+      <p className="font-body text-lg text-white leading-relaxed mb-4">
         This October, GGPEN (Angola’s National Space Program Management Office) signed an
         MoU with SES Satellites in Luxembourg, intending to advance satellite operations,
         training, and connectivity expansion.
       </p>
 
-      <p className="font-body text-lg text-luna-muted-steel leading-relaxed mb-4">
+      <p className="font-body text-lg text-white leading-relaxed mb-4">
         This partnership strengthens:
       </p>
-      <p className="font-body text-lg text-luna-muted-steel leading-relaxed mb-4">
+      <p className="font-body text-lg text-white leading-relaxed mb-4">
         ANGOSAT-2 satellite operations
       </p>
-      <p className="font-body text-lg text-luna-muted-steel leading-relaxed mb-4">
+      <p className="font-body text-lg text-white leading-relaxed mb-4">
         The Connecta Angola digital inclusion initiative
       </p>
-      <p className="font-body text-lg text-luna-muted-steel leading-relaxed mb-4">
+      <p className="font-body text-lg text-white leading-relaxed mb-4">
         Innovation capacity and technical training for local talent
       </p>
-      <p className="font-body text-lg text-luna-muted-steel leading-relaxed mb-4">
+      <p className="font-body text-lg text-white leading-relaxed mb-4">
         Already, 360,000+ people across 14 provinces benefit from telephone and internet
         services, and the ripple effect is expanding beyond Angola’s borders.
       </p>
-      <p className="font-body text-lg text-luna-muted-steel leading-relaxed mb-4">
+      <p className="font-body text-lg text-white leading-relaxed mb-4">
         This is Africa designing African solutions.
       </p>
-      <p className="font-body text-lg text-luna-muted-steel leading-relaxed mb-4">
+      <p className="font-body text-lg text-white leading-relaxed mb-4">
         This is space serving people, not the other way around. 🌍🚀
       </p>
-      <p className="font-body text-lg text-luna-muted-steel leading-relaxed mb-4">
+      <p className="font-body text-lg text-white leading-relaxed mb-4">
         Read more:
         <a
           className="text-blue-500 underline"
@@ -238,7 +238,7 @@ function DefaultArticleContent() {
         🤝 Community Action Points
       </h3>
 
-      <p className="font-body text-lg text-luna-muted-steel leading-11 mb-4">
+      <p className="font-body text-lg text-white leading-11 mb-4">
         Here’s how you can stay engaged: <br />
         Follow L.U.N.A. on LinkedIn, Instagram & Facebook <br />
         Join the conversation using #LUNAAfrospace2025 <br />
@@ -253,7 +253,7 @@ function DefaultArticleContent() {
         ✨ Closing Note
       </h3>
 
-      <p className="font-body text-lg text-luna-muted-steel leading-11 mb-4">
+      <p className="font-body text-lg text-white leading-11 mb-4">
         October reminded us that Africa is not behind; we are simply entering the room on
         our own terms.
         <br />
@@ -269,12 +269,12 @@ function DefaultArticleContent() {
 export default function NewsletterDetail() {
   // if (!newsletter) {
   //   return (
-  //     <main className="pt-32 pb-24 min-h-screen">
+  //     <main className="pt-40 md:pt-50 pb-24 min-h-screen">
   //       <div className="container mx-auto px-6 text-center">
   //         <h1 className="font-heading text-5xl text-white mb-6 tracking-widest">
   //           TRANSMISSION NOT FOUND
   //         </h1>
-  //         <p className="font-body text-xl text-luna-muted-steel mb-8">
+  //         <p className="font-body text-xl text-white mb-8">
   //           This newsletter could not be located in our archives.
   //         </p>
   //         <Link
@@ -309,14 +309,14 @@ export default function NewsletterDetail() {
           L.U.N.A. – To The Stars and Beyond ✨
         </h1>
         <div className="flex flex-wrap items-center gap-6 text-sm mb-12 pb-8 border-b border-luna-royal-blue/30">
-          <span className="flex items-center text-luna-muted-steel font-body">
+          <span className="flex items-center text-white font-body">
             <CalendarIcon size={14} className="mr-2 text-luna-glow-blue" />
             <span>October 31 , 2025</span>
           </span>
-          <span className="flex items-center text-luna-muted-steel font-body">
+          <span className="flex items-center text-white font-body">
             <TagIcon size={14} className="mr-2 text-luna-glow-blue" /> Newsletters
           </span>
-          <span className="flex items-center text-luna-muted-steel font-body">
+          <span className="flex items-center text-white font-body">
             <UserIcon size={14} className="mr-2 text-luna-glow-blue" /> admin
           </span>
         </div>

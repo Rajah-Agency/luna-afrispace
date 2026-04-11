@@ -10,17 +10,17 @@ import {
 
 export default function Contact() {
   return (
-    <main className="pt-32 pb-24 min-h-screen relative overflow-hidden">
+    <main className="pt-40 md:pt-50 pb-24 min-h-screen relative overflow-hidden">
       {/* Background elements */}
       <div className="absolute top-1/4 right-0 w-96 h-96 bg-luna-royal-blue/10 rounded-full blur-3xl pointer-events-none"></div>
-      <div className="absolute bottom-0 left-0 w-125 h-125 bg-luna-bright-blue/5 rounded-full blur-3xl pointer-events-none"></div>
+      <div className="absolute bottom-0 left-0 w-125 h-125 bg-white/5 rounded-full blur-3xl pointer-events-none"></div>
 
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center mb-16">
           <h1 className="font-heading text-5xl md:text-7xl text-white mb-6 tracking-widest text-glow">
             CONTACT US
           </h1>
-          <p className="font-body text-xl text-luna-muted-steel max-w-2xl mx-auto">
+          <p className="font-body text-xl text-white max-w-2xl mx-auto">
             We’re always ready to connect with you. Whether you have questions, feedback,
             partnership opportunities, or simply want to learn more, our team is here to
             listen and respond.
@@ -31,12 +31,12 @@ export default function Contact() {
           {/* Contact Form */}
           <div className="bg-luna-deep-navy/40 backdrop-blur-md border border-luna-royal-blue/30 p-8 md:p-12">
             <h2 className="font-heading text-2xl text-white mb-8 tracking-widest border-b border-luna-royal-blue/30 pb-4">
-              SEND TRANSMISSION
+              SEND US A MESSAGE
             </h2>
             <form className="space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="space-y-2">
-                  <label className="font-heading text-sm tracking-widest text-luna-muted-steel">
+                  <label className="font-heading text-sm tracking-widest text-white">
                     NAME
                   </label>
                   <input
@@ -46,7 +46,7 @@ export default function Contact() {
                   />
                 </div>
                 <div className="space-y-2">
-                  <label className="font-heading text-sm tracking-widest text-luna-muted-steel">
+                  <label className="font-heading text-sm tracking-widest text-white">
                     EMAIL
                   </label>
                   <input
@@ -57,7 +57,7 @@ export default function Contact() {
                 </div>
               </div>
               <div className="space-y-2">
-                <label className="font-heading text-sm tracking-widest text-luna-muted-steel">
+                <label className="font-heading text-sm tracking-widest text-white">
                   SUBJECT
                 </label>
                 <input
@@ -67,7 +67,7 @@ export default function Contact() {
                 />
               </div>
               <div className="space-y-2">
-                <label className="font-heading text-sm tracking-widest text-luna-muted-steel">
+                <label className="font-heading text-sm tracking-widest text-white">
                   MESSAGE PAYLOAD
                 </label>
                 <textarea
@@ -78,7 +78,7 @@ export default function Contact() {
               </div>
               <button
                 type="submit"
-                className="w-full bg-luna-bright-blue text-luna-bg font-heading tracking-widest text-lg px-8 py-4 hover:bg-luna-glow-blue hover:box-glow transition-all mt-4"
+                className="w-full bg-white text-luna-bg font-heading tracking-widest text-lg px-8 py-4 hover:bg-luna-glow-blue hover:box-glow transition-all mt-4"
               >
                 TRANSMIT MESSAGE
               </button>
@@ -101,12 +101,12 @@ export default function Contact() {
                     <h3 className="font-heading text-lg text-white tracking-widest mb-2">
                       HEADQUARTERS
                     </h3>
-                    <p className="font-body text-luna-muted-steel">
-                      1 Orbital Way
+                    <p className="font-body text-white">
+                      PO Box 26554
                       <br />
-                      Innovation District
+                      Gaborone
                       <br />
-                      Nairobi, Kenya
+                      Botswana
                     </p>
                   </div>
                 </div>
@@ -119,7 +119,7 @@ export default function Contact() {
                     <h3 className="font-heading text-lg text-white tracking-widest mb-2">
                       EMAIL
                     </h3>
-                    <p className="font-body text-luna-muted-steel">
+                    <p className="font-body text-white">
                       comms@luna-agency.africa
                     </p>
                   </div>
@@ -131,11 +131,10 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="font-heading text-lg text-white tracking-widest mb-2">
-                      VOICE
+                      PHONE
                     </h3>
-                    <p className="font-body text-luna-muted-steel">
-                      +254 (0) 20 555 0199
-                    </p>
+                    <p className="font-body text-white">+1 386 285 7841</p>
+                    <p className="font-body text-white">+267 714 64815</p>
                   </div>
                 </div>
               </div>
@@ -148,7 +147,7 @@ export default function Contact() {
               <div className="flex space-x-4">
                 <a
                   href="https://www.facebook.com/lunaafrispace"
-                  className="w-14 h-14 bg-luna-deep-navy/50 border border-luna-royal-blue/50 flex items-center justify-center text-luna-muted-steel hover:text-white hover:border-luna-glow-blue hover:bg-luna-royal-blue/20 transition-all group"
+                  className="w-14 h-14 bg-luna-deep-navy/50 border border-luna-royal-blue/50 flex items-center justify-center text-white hover:text-white hover:border-luna-glow-blue hover:bg-luna-royal-blue/20 transition-all group"
                 >
                   <FaFacebook
                     size={24}
@@ -157,7 +156,7 @@ export default function Contact() {
                 </a>
                 <a
                   href="https://twitter.com/lunaafrispace"
-                  className="w-14 h-14 bg-luna-deep-navy/50 border border-luna-royal-blue/50 flex items-center justify-center text-luna-muted-steel hover:text-white hover:border-luna-glow-blue hover:bg-luna-royal-blue/20 transition-all group"
+                  className="w-14 h-14 bg-luna-deep-navy/50 border border-luna-royal-blue/50 flex items-center justify-center text-white hover:text-white hover:border-luna-glow-blue hover:bg-luna-royal-blue/20 transition-all group"
                 >
                   <FaXTwitter
                     size={24}
@@ -166,7 +165,7 @@ export default function Contact() {
                 </a>
                 <a
                   href="https://www.linkedin.com/company/lunafrispace-agency"
-                  className="w-14 h-14 bg-luna-deep-navy/50 border border-luna-royal-blue/50 flex items-center justify-center text-luna-muted-steel hover:text-white hover:border-luna-glow-blue hover:bg-luna-royal-blue/20 transition-all group"
+                  className="w-14 h-14 bg-luna-deep-navy/50 border border-luna-royal-blue/50 flex items-center justify-center text-white hover:text-white hover:border-luna-glow-blue hover:bg-luna-royal-blue/20 transition-all group"
                 >
                   <FaLinkedin
                     size={24}
@@ -175,7 +174,7 @@ export default function Contact() {
                 </a>
                 <a
                   href="#"
-                  className="w-14 h-14 bg-luna-deep-navy/50 border border-luna-royal-blue/50 flex items-center justify-center text-luna-muted-steel hover:text-white hover:border-luna-glow-blue hover:bg-luna-royal-blue/20 transition-all group"
+                  className="w-14 h-14 bg-luna-deep-navy/50 border border-luna-royal-blue/50 flex items-center justify-center text-white hover:text-white hover:border-luna-glow-blue hover:bg-luna-royal-blue/20 transition-all group"
                 >
                   <FaInstagram
                     size={24}
@@ -184,7 +183,7 @@ export default function Contact() {
                 </a>
                 {/* <a
                   href="#"
-                  className="w-14 h-14 bg-luna-deep-navy/50 border border-luna-royal-blue/50 flex items-center justify-center text-luna-muted-steel hover:text-white hover:border-luna-glow-blue hover:bg-luna-royal-blue/20 transition-all group"
+                  className="w-14 h-14 bg-luna-deep-navy/50 border border-luna-royal-blue/50 flex items-center justify-center text-white hover:text-white hover:border-luna-glow-blue hover:bg-luna-royal-blue/20 transition-all group"
                 >
                   <FaYoutube
                     size={24}

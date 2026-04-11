@@ -30,13 +30,13 @@ export default function PastEvents() {
     },
   ];
   return (
-    <main className="pt-32 pb-24 min-h-screen">
+    <main className="pt-40 md:pt-50 pb-24 min-h-screen">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h1 className="font-heading text-5xl md:text-7xl text-white mb-6 tracking-widest text-glow">
             MISSION ARCHIVES
           </h1>
-          <p className="font-body text-xl text-luna-muted-steel max-w-2xl mx-auto">
+          <p className="font-body text-xl text-white max-w-2xl mx-auto">
             Explore our past events, summits, and milestones in the African space journey.
           </p>
         </div>
@@ -61,7 +61,7 @@ export default function PastEvents() {
                       {event.date}
                     </span>
                     <span className="w-1 h-1 rounded-full bg-luna-muted-steel"></span>
-                    <span className="font-heading text-sm tracking-widest text-luna-muted-steel">
+                    <span className="font-heading text-sm tracking-widest text-white">
                       {event.location}
                     </span>
                   </div>

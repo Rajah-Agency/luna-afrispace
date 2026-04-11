@@ -64,7 +64,7 @@ export function Podcast() {
                 <span className="font-heading tracking-widest text-luna-bright-blue">
                   LATEST EPISODE
                 </span>
-                <span className="font-body text-sm text-luna-muted-steel">45 MIN</span>
+                <span className="font-body text-sm text-white">45 MIN</span>
               </div>
               <h3 className="font-heading text-3xl md:text-4xl text-luna-ice-white tracking-wide group-hover:text-luna-glow-blue transition-colors">
                 Ep. 12: Satellite Dreams — Kenya's Orbital Ambitions
@@ -75,7 +75,7 @@ export function Podcast() {
           {/* Episode List & Subscribe */}
           <div className="lg:col-span-2 flex flex-col justify-between">
             <div className="space-y-4 mb-12">
-              <h4 className="font-heading text-xl tracking-widest text-luna-muted-steel mb-6 border-b border-luna-royal-blue/30 pb-4">
+              <h4 className="font-heading text-xl tracking-widest text-white mb-6 border-b border-luna-royal-blue/30 pb-4">
                 RECENT TRANSMISSIONS
               </h4>
               {episodes.map((ep) => (
@@ -92,19 +92,19 @@ export function Podcast() {
                     </span>
                   </div>
                   <div className="flex items-center space-x-4">
-                    <span className="font-body text-sm text-luna-muted-steel hidden sm:block">
+                    <span className="font-body text-sm text-white hidden sm:block">
                       {ep.duration}
                     </span>
                     <PlayIcon
                       size={20}
-                      className="text-luna-muted-steel group-hover:text-luna-glow-blue transition-colors"
+                      className="text-white group-hover:text-luna-glow-blue transition-colors"
                     />
                   </div>
                 </div>
               ))}
             </div>
             <div>
-              <h4 className="font-heading text-sm tracking-widest text-luna-muted-steel mb-4">
+              <h4 className="font-heading text-sm tracking-widest text-white mb-4">
                 SUBSCRIBE ON
               </h4>
               <div className="flex flex-wrap gap-6">

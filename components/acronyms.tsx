@@ -29,7 +29,7 @@ export function LunaAcronym() {
             }}
           />
         ))}
-        <div className="absolute inset-0 bg-luna-bg/60" />
+        {/* <div className="absolute inset-0 bg-luna-bg/60" /> */}
         <div className="absolute inset-0 bg-linear-to-b from-luna-bg/50 via-transparent to-luna-bg/50" />
       </div>
 

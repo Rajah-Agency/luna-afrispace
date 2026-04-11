@@ -76,7 +76,7 @@ export function Hero() {
             fill="none"
             stroke="currentColor"
             strokeWidth="0.05"
-            className="text-luna-muted-steel"
+            className="text-white"
             strokeDasharray="1 2"
           />
           <circle
@@ -92,12 +92,12 @@ export function Hero() {
       {/* Content */}
       <div className="relative z-10 container mx-auto px-6 text-center flex flex-col items-center">
         <h1 className="font-heading text-7xl md:text-9xl lg:text-[11rem] font-bold tracking-[0.15em] md:tracking-[0.2em] text-luna-ice-white opacity-90 mb-6 ml-[0.15em] md:ml-[0.2em] text-glow">
-          L<span className="text-luna-muted-steel/50 mx-2 md:mx-4">·</span>U
-          <span className="text-luna-muted-steel/50 mx-2 md:mx-4">·</span>N
-          <span className="text-luna-muted-steel/50 mx-2 md:mx-4">·</span>A
+          L<span className="text-white/50 mx-2 md:mx-4">·</span>U
+          <span className="text-white/50 mx-2 md:mx-4">·</span>N
+          <span className="text-white/50 mx-2 md:mx-4">·</span>A
         </h1>
 
-        <h2 className="font-heading text-xl md:text-3xl text-white tracking-[0.2em] mb-6 max-w-3xl">
+        <h2 className="font-heading font-semibold text-xl md:text-3xl text-white tracking-[0.2em] mb-6 max-w-3xl">
           AFRICA'S GATEWAY TO THE COSMOS
         </h2>
 
@@ -107,9 +107,9 @@ export function Hero() {
 
         <a
           href="#programs"
-          className="group relative inline-flex items-center justify-center px-8 py-4 font-heading tracking-widest text-lg text-luna-bg bg-luna-bright-blue overflow-hidden transition-all duration-300 hover:bg-luna-glow-blue hover:box-glow-strong"
+          className="group relative inline-flex items-center justify-center px-8 py-4 font-heading tracking-widest text-lg text-luna-bg bg-white overflow-hidden transition-all duration-300 hover:bg-luna-glow-blue hover:box-glow-strong"
         >
-          <span className="absolute inset-0 w-full h-full bg-linear-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:animate-[shimmer_1.5s_infinite]" />
+          <span className="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/20 to-transparent" />
           JOIN THE MISSION
         </a>
       </div>

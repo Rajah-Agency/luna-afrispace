@@ -1,9 +1,12 @@
+import Image from 'next/image';
+
 export default function SDGs() {
   const sdgs = [
     {
       number: 4,
       title: 'QUALITY EDUCATION',
       color: '#C5192D',
+      image: '/images/sdgs/sdg-4.png',
       description:
         'We provide accessible space education programs across Africa, connecting students to world-class researchers and institutions. Through our Student Launchpad and Research Orbit programs, we ensure inclusive and equitable quality education in STEM and space sciences.',
       initiatives: [
@@ -16,6 +19,7 @@ export default function SDGs() {
       number: 5,
       title: 'GENDER EQUALITY',
       color: '#FF3A21',
+      image: '/images/sdgs/sdg-5.png',
       description:
         'LUNA is committed to achieving gender equality in the African space sector. We actively recruit, mentor, and elevate women and girls in aerospace, ensuring they have equal opportunities to lead and innovate.',
       initiatives: [
@@ -28,6 +32,7 @@ export default function SDGs() {
       number: 9,
       title: 'INDUSTRY, INNOVATION & INFRASTRUCTURE',
       color: '#FD6925',
+      image: '/images/sdgs/sdg-9.png',
       description:
         'We build resilient space infrastructure across Africa, promoting inclusive and sustainable industrialization. From satellite communication networks to launch facilities, LUNA drives innovation that benefits the entire continent.',
       initiatives: [
@@ -40,6 +45,7 @@ export default function SDGs() {
       number: 11,
       title: 'SUSTAINABLE CITIES & COMMUNITIES',
       color: '#FD9D24',
+      image: '/images/sdgs/sdg-11.png',
       description:
         'Our Earth observation and satellite programs directly support making African cities and communities more inclusive, safe, resilient, and sustainable through space-derived data and technology.',
       initiatives: [
@@ -50,28 +56,31 @@ export default function SDGs() {
     },
   ];
   return (
-    <main className="pt-32 pb-24 min-h-screen">
+    <main className="pt-40 md:pt-50 pb-24 min-h-screen">
       <div className="container mx-auto px-6">
         {/* Header */}
         <div className="text-center mb-20">
           <h1 className="font-heading text-5xl md:text-7xl text-white mb-6 tracking-widest text-glow">
             ABOUT SDGs
           </h1>
-          <p className="font-body text-xl text-luna-muted-steel max-w-3xl mx-auto mb-8">
+          <p className="font-body text-xl text-white max-w-3xl mx-auto mb-14">
             LUNA aligns its mission with the United Nations Sustainable Development Goals,
             ensuring that Africa's journey to the stars uplifts communities and creates
             lasting impact on the ground.
           </p>
-          <div className="flex items-center justify-center space-x-6">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-10">
             {sdgs.map((sdg) => (
-              <div
-                key={sdg.number}
-                className="w-16 h-16 md:w-20 md:h-20 flex items-center justify-center font-heading text-2xl md:text-3xl text-white font-bold"
-                style={{
-                  backgroundColor: sdg.color,
-                }}
-              >
-                {sdg.number}
+              <div key={sdg.number} className="flex flex-col items-center gap-3">
+                <Image
+                  src={sdg.image}
+                  width={160}
+                  height={160}
+                  alt={`SDG ${sdg.number}`}
+                  className="w-32 h-32 md:w-40 md:h-40 object-contain"
+                />
+                <span className="font-heading text-sm tracking-widest text-white text-center">
+                  {sdg.title}
+                </span>
               </div>
             ))}
           </div>
@@ -103,7 +112,7 @@ export default function SDGs() {
                     {sdg.number}
                   </div>
                   <div>
-                    <span className="font-heading text-sm tracking-widest text-luna-muted-steel">
+                    <span className="font-heading text-sm tracking-widest text-white">
                       SDG {sdg.number}
                     </span>
                     <h2 className="font-heading text-2xl md:text-3xl text-white tracking-wider">
@@ -112,7 +121,7 @@ export default function SDGs() {
                   </div>
                 </div>
 
-                <p className="font-body text-lg text-luna-muted-steel leading-relaxed mb-8">
+                <p className="font-body text-lg text-white leading-relaxed mb-8">
                   {sdg.description}
                 </p>
 

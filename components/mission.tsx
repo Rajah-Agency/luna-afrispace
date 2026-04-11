@@ -1,5 +1,6 @@
 'use client';
 import { useParallax } from '../hooks/useParallax';
+import Image from 'next/image';
 
 export function MissionVision() {
   const { ref, offset } = useParallax(0.4);
@@ -8,7 +9,9 @@ export function MissionVision() {
     <section ref={ref} id="mission" className="relative py-24 md:py-32 overflow-hidden">
       {/* Earth from Space Background */}
       <div className="absolute inset-0 z-0">
-        <img
+        <Image
+          width={1920}
+          height={1080}
           src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1920&q=80"
           alt=""
           className="w-full h-full object-cover scale-[1.2] will-change-transform"
@@ -16,7 +19,7 @@ export function MissionVision() {
             transform: `translateY(${offset * 0.5}px) scale(1.2)`,
           }}
         />
-        <div className="absolute inset-0 bg-luna-bg/45" />
+        {/* <div className="absolute inset-0 bg-luna-bg/45" /> */}
         <div className="absolute inset-0 bg-linear-to-b from-luna-bg/40 via-transparent to-luna-bg/40" />
       </div>
 
@@ -29,7 +32,7 @@ export function MissionVision() {
               <span className="w-8 h-px bg-luna-glow-blue mr-4"></span>
               OUR MISSION
             </h2>
-            <p className="font-body text-lg text-luna-muted-steel leading-relaxed">
+            <p className="font-body text-lg text-white leading-relaxed">
               Position Africa in the global space race by equipping people with the
               necessary skills and knowledge about space.
             </p>
@@ -42,7 +45,7 @@ export function MissionVision() {
               <span className="w-8 h-px bg-luna-glow-blue mr-4"></span>
               OUR VISION
             </h2>
-            <p className="font-body text-lg text-luna-muted-steel leading-relaxed">
+            <p className="font-body text-lg text-white leading-relaxed">
               Putting Africans at the forefront of the space race in the world and Africa.
               Showing Africa and the world that they don&apos;t have to be left behind and
               to show that LUNA encompasses areas such as STEM, medicine, humanities ,
@@ -57,7 +60,7 @@ export function MissionVision() {
             <div className="font-heading text-5xl md:text-6xl text-luna-glow-blue text-glow mb-2">
               15+
             </div>
-            <div className="font-heading tracking-widest text-luna-muted-steel">
+            <div className="font-heading tracking-widest text-white">
               AFRICAN NATIONS
             </div>
           </div>
@@ -65,7 +68,7 @@ export function MissionVision() {
             <div className="font-heading text-5xl md:text-6xl text-luna-glow-blue text-glow mb-2">
               500+
             </div>
-            <div className="font-heading tracking-widest text-luna-muted-steel">
+            <div className="font-heading tracking-widest text-white">
               STUDENTS CONNECTED
             </div>
           </div>
@@ -73,7 +76,7 @@ export function MissionVision() {
             <div className="font-heading text-5xl md:text-6xl text-luna-glow-blue text-glow mb-2">
               30+
             </div>
-            <div className="font-heading tracking-widest text-luna-muted-steel">
+            <div className="font-heading tracking-widest text-white">
               RESEARCH PROJECTS
             </div>
           </div>

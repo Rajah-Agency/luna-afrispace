@@ -43,7 +43,7 @@ export function Programs() {
             transform: `translateY(${offset * 0.5}px) scale(1.2)`,
           }}
         />
-        <div className="absolute inset-0 bg-luna-bg/40" />
+        {/* <div className="absolute inset-0 bg-luna-bg/40" /> */}
         <div className="absolute inset-0 bg-linear-to-b from-luna-bg/35 via-transparent to-luna-bg/35" />
       </div>
 
@@ -67,7 +67,7 @@ export function Programs() {
               <h3 className="font-heading text-2xl text-luna-ice-white mb-4 tracking-wider">
                 {program.title}
               </h3>
-              <p className="font-body text-luna-muted-steel mb-8 grow">
+              <p className="font-body text-white mb-8 grow">
                 {program.description}
               </p>
               <a

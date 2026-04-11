@@ -17,7 +17,7 @@ export function Events() {
             transform: `translateY(${offset * 0.5}px) scale(1.2)`,
           }}
         />
-        <div className="absolute inset-0 bg-luna-bg/40" />
+        {/* <div className="absolute inset-0 bg-luna-bg/40" /> */}
         <div className="absolute inset-0 bg-linear-to-b from-luna-bg/35 via-transparent to-luna-bg/35" />
       </div>
 
@@ -50,13 +50,13 @@ export function Events() {
                     <span className="inline-block px-3 py-1 bg-luna-ice-white font-heading tracking-widest text-sm text-luna-bg mb-4">
                       {event.date}
                     </span>
-                    <h3 className="font-heading text-2xl md:text-3xl text-luna-ice-white mb-2 tracking-wide">
+                    <h3 className="font-heading font-semibold text-2xl md:text-3xl text-luna-ice-white mb-2 tracking-wide">
                       {event.name}
                     </h3>
-                    <div className="font-heading tracking-widest text-luna-glow-blue mb-4 text-sm">
+                    <div className="font-heading tracking-widest text-white mb-4 text-sm">
                       {event.location}
                     </div>
-                    <p className="font-body text-luna-muted-steel">{event.description}</p>
+                    <p className="font-body text-white">{event.description}</p>
                   </div>
                 </div>
               </div>

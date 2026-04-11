@@ -2,6 +2,8 @@
 import { useEffect, useState } from 'react';
 import { MenuIcon, XIcon } from 'lucide-react';
 import { navLinks } from '@/app/constant';
+import Image from 'next/image';
+import Link from 'next/link';
 
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -17,19 +19,21 @@ export function Navbar() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? 'bg-luna-deep-navy/90 backdrop-blur-md py-0 border-b border-luna-royal-blue/30' : 'bg-transparent py-6'}`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? 'bg-luna-deep-navy/90 backdrop-blur-md py-0 border-b border-luna-royal-blue/30' : 'bg-transparent py-0'}`}
     >
       <div className="container mx-auto px-6 flex items-center justify-between">
-        <a href="/" className="flex items-center">
-          <img
-            src="https://cdn.magicpatterns.com/uploads/ndVmFYcsDRbT8rzhYhHkpQ/IMG_5833.png"
+        <Link href="/" className="flex items-center">
+          <Image
+            src="/images/logos/luna-logo.png"
+            width={120}
+            height={120}
             alt="LUNA"
-            className="h-32 md:h-40 opacity-90 hover:opacity-100 transition-opacity"
+            className="h-32 md:h-40"
           />
-        </a>
+        </Link>
 
         {/* Desktop Nav */}
-        <div className="hidden md:flex items-center space-x-10">
+        <div className="hidden md:flex items-center space-x-10 font-medium">
           {navLinks.map((link) => (
             <a
               key={link.name}
