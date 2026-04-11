@@ -39,18 +39,6 @@ export function Podcast() {
             <div className="relative aspect-video bg-luna-deep-navy/60 backdrop-blur-sm border border-luna-royal-blue/50 overflow-hidden mb-6 flex items-center justify-center group-hover:border-glow transition-all duration-500">
               {/* Abstract Soundwave/Space Graphic */}
               <div className="absolute inset-0 opacity-20 bg-[radial-gradient(circle_at_center,var(--tw-gradient-stops))] from-luna-bright-blue via-luna-deep-navy to-luna-bg"></div>
-              <div className="flex items-center space-x-2 z-10 opacity-30">
-                {[...Array(15)].map((_, i) => (
-                  <div
-                    key={i}
-                    className="w-2 bg-luna-glow-blue animate-pulse"
-                    style={{
-                      height: `${Math.random() * 60 + 20}%`,
-                      animationDelay: `${i * 0.1}s`,
-                    }}
-                  ></div>
-                ))}
-              </div>
               <div className="absolute inset-0 flex items-center justify-center z-20">
                 <CirclePlayIcon
                   size={80}
