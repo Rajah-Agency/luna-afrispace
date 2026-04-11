@@ -1,34 +1,14 @@
+import Image from 'next/image';
+import { pastEvents } from '../constant';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Past Events | LUNA',
+  description: 'Explore our past events, summits, and milestones in the African space journey.',
+};
+
 export default function PastEvents() {
-  const events = [
-    {
-      id: 1,
-      title: 'African Space Tech Summit 2025',
-      date: 'November 12-14, 2025',
-      location: 'Kigali, Rwanda',
-      image: 'https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1200&q=80',
-    },
-    {
-      id: 2,
-      title: 'LUNA Satellite Launch Viewing',
-      date: 'August 05, 2025',
-      location: 'Virtual Event',
-      image: 'https://images.unsplash.com/photo-1517976487492-5750f3195933?w=1200&q=80',
-    },
-    {
-      id: 3,
-      title: 'Student Rocketry Competition Finals',
-      date: 'May 20, 2025',
-      location: 'Cape Town, South Africa',
-      image: 'https://images.unsplash.com/photo-1516849841032-87cbac4d88f7?w=1200&q=80',
-    },
-    {
-      id: 4,
-      title: 'Women in African Aerospace',
-      date: 'March 08, 2025',
-      location: 'Nairobi, Kenya',
-      image: 'https://images.unsplash.com/photo-1573164713988-8665fc963095?w=1200&q=80',
-    },
-  ];
+
   return (
     <main className="pt-40 md:pt-50 pb-24 min-h-screen">
       <div className="container mx-auto px-6">
@@ -42,13 +22,15 @@ export default function PastEvents() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-6xl mx-auto">
-          {events.map((event) => (
+          {pastEvents.map((event) => (
             <div
               key={event.id}
               className="group relative overflow-hidden border border-luna-royal-blue/30 bg-luna-deep-navy/20"
             >
               <div className="aspect-16/10 overflow-hidden">
-                <img
+                <Image
+                  width={1920}
+                  height={1080}
                   src={event.image}
                   alt={event.title}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-80 group-hover:opacity-100"

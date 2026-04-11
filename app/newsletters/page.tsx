@@ -1,6 +1,13 @@
 import { ArrowRightIcon } from 'lucide-react';
 import { blogs } from '../constant';
 import Link from 'next/link';
+import Image from 'next/image';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Newsletters | LUNA',
+  description: 'Latest updates, research findings, and stories from the African space frontier.',
+};
 
 export default function Newsletters() {
   return (
@@ -24,7 +31,9 @@ export default function Newsletters() {
               className="group flex flex-col bg-luna-deep-navy/30 border border-luna-royal-blue/30 hover:border-luna-glow-blue transition-all duration-300 overflow-hidden"
             >
               <div className="aspect-video overflow-hidden relative">
-                <img
+                <Image
+                  width={1920}
+                  height={1080}
                   src={blog.image}
                   alt={blog.title}
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"

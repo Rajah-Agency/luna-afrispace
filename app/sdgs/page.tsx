@@ -1,67 +1,21 @@
+import { Metadata } from 'next';
 import Image from 'next/image';
+import { sdgs } from '../constant';
+
+export const metadata: Metadata = {
+  title: 'SDGs | LUNA',
+  description: 'LUNA aligns its mission with the United Nations Sustainable Development Goals.',
+};
 
 export default function SDGs() {
-  const sdgs = [
-    {
-      number: 4,
-      title: 'QUALITY EDUCATION',
-      color: '#C5192D',
-      image: '/images/sdgs/sdg-4.png',
-      description:
-        'We provide accessible space education programs across Africa, connecting students to world-class researchers and institutions. Through our Student Launchpad and Research Orbit programs, we ensure inclusive and equitable quality education in STEM and space sciences.',
-      initiatives: [
-        'Student Launchpad mentorship program across 15+ African nations',
-        'Free online courses in astrodynamics, satellite engineering, and remote sensing',
-        'University partnerships for hands-on research opportunities',
-      ],
-    },
-    {
-      number: 5,
-      title: 'GENDER EQUALITY',
-      color: '#FF3A21',
-      image: '/images/sdgs/sdg-5.png',
-      description:
-        'LUNA is committed to achieving gender equality in the African space sector. We actively recruit, mentor, and elevate women and girls in aerospace, ensuring they have equal opportunities to lead and innovate.',
-      initiatives: [
-        'Women in African Aerospace annual summit and fellowship',
-        '50% scholarship allocation for women in all LUNA programs',
-        'Mentorship network connecting female professionals across the continent',
-      ],
-    },
-    {
-      number: 9,
-      title: 'INDUSTRY, INNOVATION & INFRASTRUCTURE',
-      color: '#FD6925',
-      image: '/images/sdgs/sdg-9.png',
-      description:
-        'We build resilient space infrastructure across Africa, promoting inclusive and sustainable industrialization. From satellite communication networks to launch facilities, LUNA drives innovation that benefits the entire continent.',
-      initiatives: [
-        'Development of equatorial launch capabilities',
-        'Pan-African satellite constellation for communications and Earth observation',
-        'Open-source space technology incubator for African startups',
-      ],
-    },
-    {
-      number: 11,
-      title: 'SUSTAINABLE CITIES & COMMUNITIES',
-      color: '#FD9D24',
-      image: '/images/sdgs/sdg-11.png',
-      description:
-        'Our Earth observation and satellite programs directly support making African cities and communities more inclusive, safe, resilient, and sustainable through space-derived data and technology.',
-      initiatives: [
-        'Satellite-based urban planning and disaster monitoring tools',
-        'Climate data services for vulnerable coastal and rural communities',
-        'Smart city infrastructure powered by space technology',
-      ],
-    },
-  ];
+
   return (
     <main className="pt-40 md:pt-50 pb-24 min-h-screen">
       <div className="container mx-auto px-6">
         {/* Header */}
         <div className="text-center mb-20">
           <h1 className="font-heading text-5xl md:text-7xl text-white mb-6 tracking-widest text-glow">
-            ABOUT SDGs
+            SDGs
           </h1>
           <p className="font-body text-xl text-white max-w-3xl mx-auto mb-14">
             LUNA aligns its mission with the United Nations Sustainable Development Goals,

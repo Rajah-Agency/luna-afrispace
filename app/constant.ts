@@ -188,3 +188,91 @@ export const team = [
     image: '/images/team-members/donald-tembo.webp',
   },
 ];
+
+
+export const sdgs = [
+  {
+    number: 4,
+    title: 'QUALITY EDUCATION',
+    color: '#C5192D',
+    image: '/images/sdgs/sdg-4.png',
+    description:
+      'We provide accessible space education programs across Africa, connecting students to world-class researchers and institutions. Through our Student Launchpad and Research Orbit programs, we ensure inclusive and equitable quality education in STEM and space sciences.',
+    initiatives: [
+      'Student Launchpad mentorship program across 15+ African nations',
+      'Free online courses in astrodynamics, satellite engineering, and remote sensing',
+      'University partnerships for hands-on research opportunities',
+    ],
+  },
+  {
+    number: 5,
+    title: 'GENDER EQUALITY',
+    color: '#FF3A21',
+    image: '/images/sdgs/sdg-5.png',
+    description:
+      'LUNA is committed to achieving gender equality in the African space sector. We actively recruit, mentor, and elevate women and girls in aerospace, ensuring they have equal opportunities to lead and innovate.',
+    initiatives: [
+      'Women in African Aerospace annual summit and fellowship',
+      '50% scholarship allocation for women in all LUNA programs',
+      'Mentorship network connecting female professionals across the continent',
+    ],
+  },
+  {
+    number: 9,
+    title: 'INDUSTRY, INNOVATION & INFRASTRUCTURE',
+    color: '#FD6925',
+    image: '/images/sdgs/sdg-9.png',
+    description:
+      'We build resilient space infrastructure across Africa, promoting inclusive and sustainable industrialization. From satellite communication networks to launch facilities, LUNA drives innovation that benefits the entire continent.',
+    initiatives: [
+      'Development of equatorial launch capabilities',
+      'Pan-African satellite constellation for communications and Earth observation',
+      'Open-source space technology incubator for African startups',
+    ],
+  },
+  {
+    number: 11,
+    title: 'SUSTAINABLE CITIES & COMMUNITIES',
+    color: '#FD9D24',
+    image: '/images/sdgs/sdg-11.png',
+    description:
+      'Our Earth observation and satellite programs directly support making African cities and communities more inclusive, safe, resilient, and sustainable through space-derived data and technology.',
+    initiatives: [
+      'Satellite-based urban planning and disaster monitoring tools',
+      'Climate data services for vulnerable coastal and rural communities',
+      'Smart city infrastructure powered by space technology',
+    ],
+  },
+];
+
+
+export const pastEvents = [
+  {
+    id: 1,
+    title: 'African Space Tech Summit 2025',
+    date: 'November 12-14, 2025',
+    location: 'Kigali, Rwanda',
+    image: 'https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1200&q=80',
+  },
+  {
+    id: 2,
+    title: 'LUNA Satellite Launch Viewing',
+    date: 'August 05, 2025',
+    location: 'Virtual Event',
+    image: 'https://images.unsplash.com/photo-1517976487492-5750f3195933?w=1200&q=80',
+  },
+  {
+    id: 3,
+    title: 'Student Rocketry Competition Finals',
+    date: 'May 20, 2025',
+    location: 'Cape Town, South Africa',
+    image: 'https://images.unsplash.com/photo-1516849841032-87cbac4d88f7?w=1200&q=80',
+  },
+  {
+    id: 4,
+    title: 'Women in African Aerospace',
+    date: 'March 08, 2025',
+    location: 'Nairobi, Kenya',
+    image: 'https://images.unsplash.com/photo-1573164713988-8665fc963095?w=1200&q=80',
+  },
+];

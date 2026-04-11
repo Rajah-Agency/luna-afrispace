@@ -8,6 +8,13 @@ import {
   FaFacebook,
 } from 'react-icons/fa6';
 
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Contact Us | LUNA',
+  description: 'Get in touch with us.',
+};
+
 export default function Contact() {
   return (
     <main className="pt-40 md:pt-50 pb-24 min-h-screen relative overflow-hidden">

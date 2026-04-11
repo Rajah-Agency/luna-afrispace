@@ -1,6 +1,12 @@
 import Image from 'next/image';
 import { MissionVision } from '../../components/mission';
 import { team } from '../constant';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'About | LUNA',
+  description: 'Learn about Loapi Unified Nexus Afrispace.',
+};
 
 export default function About() {
   return (
