@@ -23,29 +23,29 @@ export function Footer() {
             </p>
             <div className="flex space-x-4">
               <a
-                href="#"
+                href="https://x.com/lunaAFRISPACE"
                 className="text-white hover:text-luna-glow-blue transition-colors"
               >
                 <FaXTwitter size={20} />
               </a>
               <a
-                href="#"
+                href="https://www.linkedin.com/company/lunafrispace-agency"
                 className="text-white hover:text-luna-glow-blue transition-colors"
               >
                 <FaLinkedin size={20} />
               </a>
               <a
-                href="#"
+                href="https://www.instagram.com/lunaafrispace/"
                 className="text-white hover:text-luna-glow-blue transition-colors"
               >
                 <FaInstagram size={20} />
               </a>
-              <a
+              {/* <a
                 href="#"
                 className="text-white hover:text-luna-glow-blue transition-colors"
               >
                 <FaYoutube size={20} />
-              </a>
+              </a> */}
             </div>
           </div>
 
@@ -146,12 +146,12 @@ export function Footer() {
             </h4>
             <ul className="space-y-3">
               <li>
-                <a
-                  href="#"
+                <Link
+                  href="/contact"
                   className="font-body text-sm text-white hover:text-luna-glow-blue transition-colors"
                 >
                   Contact Us
-                </a>
+                </Link>
               </li>
               <li>
                 <a

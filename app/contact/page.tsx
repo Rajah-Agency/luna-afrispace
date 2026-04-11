@@ -127,7 +127,7 @@ export default function Contact() {
                       EMAIL
                     </h3>
                     <p className="font-body text-white">
-                      comms@luna-agency.africa
+                      info@lunafrispace.org
                     </p>
                   </div>
                 </div>
