@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import { PlayIcon } from 'lucide-react';
 import { useParallax } from '../hooks/useParallax';
-import { videos } from '@/constants/youtube.constant';
+import { channelName, videos } from '@/constants/youtube.constant';
 
 export function YouTube() {
   const { ref, offset } = useParallax(0.35);
@@ -141,8 +141,11 @@ export function YouTube() {
               </h4>
               <div className="flex flex-wrap gap-6">
                 {[
-                  { label: 'YouTube', href: 'https://youtube.com/@yourchannel' },
-                  { label: 'Subscribe', href: '#' },
+                  { label: 'YouTube', href: `https://www.youtube.com/${channelName}` },
+                  {
+                    label: 'Subscribe',
+                    href: `https://www.youtube.com/${channelName}?sub_confirmation=1`,
+                  },
                 ].map((link) => (
                   <a
                     key={link.label}
