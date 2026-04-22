@@ -1,6 +1,7 @@
 'use client';
 import { GraduationCapIcon, TelescopeIcon, RocketIcon, GlobeIcon } from 'lucide-react';
 import { useParallax } from '../hooks/useParallax';
+import Image from 'next/image';
 
 export function Programs() {
   const { ref, offset } = useParallax(0.35);
@@ -35,7 +36,8 @@ export function Programs() {
     <section ref={ref} id="programs" className="py-24 md:py-32 relative overflow-hidden">
       {/* Milky Way Background */}
       <div className="absolute inset-0 z-0">
-        <img
+        <Image
+          fill
           src="https://images.unsplash.com/photo-1457364887197-9150188c107b?w=1920&q=80"
           alt=""
           className="w-full h-full object-cover scale-[1.2] will-change-transform"
@@ -67,9 +69,7 @@ export function Programs() {
               <h3 className="font-heading text-2xl text-luna-ice-white mb-4 tracking-wider">
                 {program.title}
               </h3>
-              <p className="font-body text-white mb-8 grow">
-                {program.description}
-              </p>
+              <p className="font-body text-white mb-8 grow">{program.description}</p>
               <a
                 href="#"
                 className="font-heading tracking-widest text-luna-glow-blue flex items-center group-hover:text-luna-ice-white transition-colors mt-auto"

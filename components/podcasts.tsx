@@ -3,6 +3,7 @@
 import { CirclePlayIcon, PlayIcon } from 'lucide-react';
 import { useParallax } from '../hooks/useParallax';
 import { episodes } from '../app/constant';
+import Image from 'next/image';
 
 export function Podcast() {
   const { ref, offset } = useParallax(0.35);
@@ -11,7 +12,8 @@ export function Podcast() {
     <section ref={ref} id="podcast" className="py-24 md:py-32 relative overflow-hidden">
       {/* Dark Blue Space Background */}
       <div className="absolute inset-0 z-0">
-        <img
+        <Image
+          fill
           src="https://images.unsplash.com/photo-1534796636912-3b95b3ab5986?w=1920&q=80"
           alt=""
           className="w-full h-full object-cover scale-[1.2] will-change-transform"

@@ -1,5 +1,6 @@
 'use client';
 import { useParallax } from '../hooks/useParallax';
+import Image from 'next/image';
 
 export function Newsletter() {
   const { ref, offset } = useParallax(0.4);
@@ -8,7 +9,8 @@ export function Newsletter() {
     <section ref={ref} id="contact" className="py-24 md:py-32 relative overflow-hidden">
       {/* Earth Sunrise from Orbit Background — Parallax */}
       <div className="absolute inset-0 z-0">
-        <img
+        <Image
+          fill
           src="https://images.unsplash.com/photo-1516849841032-87cbac4d88f7?w=1920&q=80"
           alt=""
           className="w-full h-full object-cover scale-[1.2] will-change-transform"

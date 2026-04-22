@@ -13,8 +13,8 @@ function DefaultArticleContent() {
       <p className="font-body text-lg text-white leading-relaxed mb-8">
         October marked World Space Week, and at L.U.N.A. (Loapi Unified Nexus Afrispace
         Agency), we joined the celebration in our own grounded yet cosmic way by expanding
-        knowledge, community, and vision. In case you missed last October's publication,
-        you can find it here:{' '}
+        knowledge, community, and vision. In case you missed last October&apos;s
+        publication, you can find it here:{' '}
         <a
           href="https://lunaafrispace.org/2025/10/22/october-the-month-for-space-%f0%9f%9b%b0%ef%b8%8f/"
           className="text-blue-500 underline"

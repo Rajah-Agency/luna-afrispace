@@ -1,6 +1,7 @@
 'use client';
 import { events } from '../app/constant';
 import { useParallax } from '../hooks/useParallax';
+import Image from 'next/image';
 
 export function Events() {
   const { ref, offset } = useParallax(0.4);
@@ -9,9 +10,10 @@ export function Events() {
     <section ref={ref} id="events" className="py-24 md:py-32 relative overflow-hidden">
       {/* Space Station / Earth Horizon Background */}
       <div className="absolute inset-0 z-0">
-        <img
+        <Image
           src="https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?w=1920&q=80"
           alt=""
+          fill
           className="w-full h-full object-cover scale-[1.2] will-change-transform"
           style={{
             transform: `translateY(${offset * 0.5}px) scale(1.2)`,

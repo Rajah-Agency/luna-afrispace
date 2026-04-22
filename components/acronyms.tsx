@@ -1,6 +1,7 @@
 'use client';
 import { useEffect, useState } from 'react';
 import { slides } from '../app/constant';
+import Image from 'next/image';
 
 export function LunaAcronym() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -17,10 +18,11 @@ export function LunaAcronym() {
       {/* Background Images Slideshow */}
       <div className="absolute inset-0 z-0">
         {slides.map((slide, index) => (
-          <img
+          <Image
             key={index}
             src={slide.image}
             alt=""
+            fill
             className="absolute inset-0 w-full h-full object-cover will-change-transform"
             style={{
               opacity: index === currentSlide ? 1 : 0,
