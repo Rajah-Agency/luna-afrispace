@@ -23,6 +23,10 @@ export const navLinks = [
     name: 'Past Events',
     href: '/past-events',
   },
+  {
+    name: 'Resources',
+    href: '/resources',
+  },
 ];
 
 export const slides = [
@@ -77,7 +81,7 @@ export const events = [
   },
   {
     id: 3,
-    name: 'LUNA Student Challenge',
+    name: 'L.U.N.A Student Challenge',
     location: 'Lagos, Nigeria',
     date: 'MAY 2026',
     description:
@@ -189,7 +193,6 @@ export const team = [
   },
 ];
 
-
 export const sdgs = [
   {
     number: 4,
@@ -210,10 +213,10 @@ export const sdgs = [
     color: '#FF3A21',
     image: '/images/sdgs/sdg-5.png',
     description:
-      'LUNA is committed to achieving gender equality in the African space sector. We actively recruit, mentor, and elevate women and girls in aerospace, ensuring they have equal opportunities to lead and innovate.',
+      'L.U.N.A is committed to achieving gender equality in the African space sector. We actively recruit, mentor, and elevate women and girls in aerospace, ensuring they have equal opportunities to lead and innovate.',
     initiatives: [
       'Women in African Aerospace annual summit and fellowship',
-      '50% scholarship allocation for women in all LUNA programs',
+      '50% scholarship allocation for women in all L.U.N.A programs',
       'Mentorship network connecting female professionals across the continent',
     ],
   },
@@ -223,7 +226,7 @@ export const sdgs = [
     color: '#FD6925',
     image: '/images/sdgs/sdg-9.png',
     description:
-      'We build resilient space infrastructure across Africa, promoting inclusive and sustainable industrialization. From satellite communication networks to launch facilities, LUNA drives innovation that benefits the entire continent.',
+      'We build resilient space infrastructure across Africa, promoting inclusive and sustainable industrialization. From satellite communication networks to launch facilities, L.U.N.A drives innovation that benefits the entire continent.',
     initiatives: [
       'Development of equatorial launch capabilities',
       'Pan-African satellite constellation for communications and Earth observation',
@@ -245,7 +248,6 @@ export const sdgs = [
   },
 ];
 
-
 export const pastEvents = [
   {
     id: 1,
@@ -256,7 +258,7 @@ export const pastEvents = [
   },
   {
     id: 2,
-    title: 'LUNA Satellite Launch Viewing',
+    title: 'L.U.N.A Satellite Launch Viewing',
     date: 'August 05, 2025',
     location: 'Virtual Event',
     image: 'https://images.unsplash.com/photo-1517976487492-5750f3195933?w=1200&q=80',
