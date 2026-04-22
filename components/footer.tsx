@@ -1,3 +1,4 @@
+import { channelName } from '@/constants/youtube.constant';
 import Image from 'next/image';
 import Link from 'next/link';
 import { FaXTwitter, FaLinkedin, FaInstagram, FaYoutube } from 'react-icons/fa6';
@@ -12,9 +13,9 @@ export function Footer() {
             <Link href="/" className="flex items-center">
               <Image
                 src="/images/logos/luna-logo.png"
-                width={150}
-                height={150}
-                alt="LUNA"
+                width={250}
+                height={250}
+                alt="L.U.N.A"
               />
             </Link>
             <p className="font-body text-white mb-6 text-sm">
@@ -23,35 +24,39 @@ export function Footer() {
             </p>
             <div className="flex space-x-4">
               <a
+                target="_blank"
                 href="https://x.com/lunaAFRISPACE"
                 className="text-white hover:text-luna-glow-blue transition-colors"
               >
                 <FaXTwitter size={20} />
               </a>
               <a
+                target="_blank"
                 href="https://www.linkedin.com/company/lunafrispace-agency"
                 className="text-white hover:text-luna-glow-blue transition-colors"
               >
                 <FaLinkedin size={20} />
               </a>
               <a
+                target="_blank"
                 href="https://www.instagram.com/lunaafrispace/"
                 className="text-white hover:text-luna-glow-blue transition-colors"
               >
                 <FaInstagram size={20} />
               </a>
-              {/* <a
-                href="#"
+              <a
+                target="_blank"
+                href={`https://www.youtube.com/${channelName}`}
                 className="text-white hover:text-luna-glow-blue transition-colors"
               >
                 <FaYoutube size={20} />
-              </a> */}
+              </a>
             </div>
           </div>
 
           {/* Programs Col */}
           <div>
-            <h4 className="font-heading tracking-widest text-luna-ice-white mb-6">
+            <h4 className="font-heading tracking-widest text-luna-ice-white mb-6 text-xl">
               PROGRAMS
             </h4>
             <ul className="space-y-3">
@@ -97,15 +102,8 @@ export function Footer() {
             </h4>
             <ul className="space-y-3">
               <li>
-                <Link
-                  href="/newsletters"
-                  className="font-body text-sm text-white hover:text-luna-glow-blue transition-colors"
-                >
-                  Blog
-                </Link>
-              </li>
-              <li>
                 <a
+                  target="_blank"
                   href="https://x.com/lunaAFRISPACE"
                   className="font-body text-sm text-white hover:text-luna-glow-blue transition-colors"
                 >
@@ -114,6 +112,7 @@ export function Footer() {
               </li>
               <li>
                 <a
+                  target="_blank"
                   href="https://www.linkedin.com/company/lunafrispace-agency"
                   className="font-body text-sm text-white hover:text-luna-glow-blue transition-colors"
                 >
@@ -122,6 +121,7 @@ export function Footer() {
               </li>
               <li>
                 <a
+                  target="_blank"
                   href="https://www.facebook.com/share/1EEB18BG59/?mibextid=wwXIfr"
                   className="font-body text-sm text-white hover:text-luna-glow-blue transition-colors"
                 >
@@ -130,10 +130,21 @@ export function Footer() {
               </li>
               <li>
                 <a
+                  target="_blank"
                   href="https://www.instagram.com/lunaafrispace/"
                   className="font-body text-sm text-white hover:text-luna-glow-blue transition-colors"
                 >
                   Instagram
+                </a>
+              </li>
+
+              <li>
+                <a
+                  target="_blank"
+                  href={`https://www.youtube.com/${channelName}`}
+                  className="font-body text-sm text-white hover:text-luna-glow-blue transition-colors"
+                >
+                  Youtube
                 </a>
               </li>
             </ul>
@@ -169,14 +180,6 @@ export function Footer() {
                   Donate
                 </a>
               </li>
-              <li>
-                <a
-                  href="#"
-                  className="font-body text-sm text-white hover:text-luna-glow-blue transition-colors"
-                >
-                  FAQ
-                </a>
-              </li>
             </ul>
           </div>
         </div>
@@ -184,13 +187,13 @@ export function Footer() {
         {/* Bottom Bar */}
         <div className="border-t border-luna-royal-blue/20 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="font-body text-xs text-white/70 text-center md:text-left">
-            © 2026 LUNA — Loapi Unified Nexus AfriSpace Agency. All rights reserved.
+            © 2026 L.U.N.A — Loapi Unified Nexus AfriSpace Agency. All rights reserved.
           </p>
           <p className="font-heading tracking-widest text-sm text-luna-glow-blue text-center md:text-right">
             BUILT FOR THE STARS. ROOTED IN AFRICA.
           </p>
         </div>
       </div>
-    </footer >
+    </footer>
   );
 }

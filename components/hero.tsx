@@ -106,10 +106,10 @@ export function Hero() {
         </p>
 
         <a
-          href="#programs"
+          href="#contact"
           className="group relative inline-flex items-center justify-center px-8 py-4 font-heading tracking-widest text-lg text-luna-bg bg-white overflow-hidden transition-all duration-300 hover:bg-luna-glow-blue hover:box-glow-strong"
         >
-          <span className="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/20 to-transparent" />
+          <span className="absolute inset-0 w-full h-full bg-linear-to-r from-transparent via-white/20 to-transparent" />
           JOIN THE MISSION
         </a>
       </div>

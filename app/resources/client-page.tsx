@@ -52,7 +52,7 @@ export function MentorsClientPage() {
           <p className="font-body text-xl text-white max-w-3xl mx-auto">
             {activeTab === 'mentors'
               ? "Connect with Africa's leading space professionals and researchers."
-              : 'Download guides, reports, and handbooks from the LUNA library.'}
+              : 'Download guides, reports, and handbooks from the L.U.N.A library.'}
           </p>
           <div className="w-30 h-1 bg-luna-glow-blue mx-auto mt-6" />
         </div>

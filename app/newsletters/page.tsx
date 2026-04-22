@@ -5,8 +5,9 @@ import Image from 'next/image';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Newsletters | LUNA',
-  description: 'Latest updates, research findings, and stories from the African space frontier.',
+  title: 'Newsletters | L.U.N.A',
+  description:
+    'Latest updates, research findings, and stories from the African space frontier.',
 };
 
 export default function Newsletters() {
@@ -40,15 +41,11 @@ export default function Newsletters() {
                 />
               </div>
               <div className="p-8 flex flex-col grow">
-                <span className="font-body text-sm text-white mb-3">
-                  {blog.date}
-                </span>
+                <span className="font-body text-sm text-white mb-3">{blog.date}</span>
                 <h2 className="font-heading text-2xl text-white mb-4 group-hover:text-luna-glow-blue transition-colors">
                   {blog.title}
                 </h2>
-                <p className="font-body text-white mb-6 grow">
-                  {blog.excerpt}
-                </p>
+                <p className="font-body text-white mb-6 grow">{blog.excerpt}</p>
                 <div className="flex items-center text-luna-glow-blue font-heading tracking-widest text-sm mt-auto">
                   READ ARTICLE{' '}
                   <ArrowRightIcon

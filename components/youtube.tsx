@@ -27,7 +27,7 @@ export function YouTube() {
       <div className="container mx-auto px-6 relative z-10">
         <div className="mb-16">
           <h2 className="font-heading text-4xl md:text-5xl text-luna-ice-white tracking-widest mb-2">
-            LUNA TRANSMISSIONS
+            L.U.N.A TRANSMISSIONS
           </h2>
           <p className="font-body text-xl text-luna-glow-blue">
             Watch Africa's space story unfold.

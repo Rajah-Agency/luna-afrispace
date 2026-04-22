@@ -47,9 +47,10 @@ export function MissionVision() {
             </h2>
             <p className="font-body text-lg text-white leading-relaxed">
               Putting Africans at the forefront of the space race in the world and Africa.
-              Showing Africa and the world that they don&apos;t have to be left behind and
-              to show that LUNA encompasses areas such as STEM, medicine, humanities ,
-              tech, AI , space science , astronautics and aerospace.
+              Showing Africa and the world that they don't have to be left behind and to
+              show that L.U.N.A encompasses areas such as Science, Technology, Engineering
+              and Mathematics, Medicine, Humanities, Artificial Intelligence, Space
+              Science, Astronautics and Aerospace
             </p>
           </div>
         </div>
@@ -60,9 +61,7 @@ export function MissionVision() {
             <div className="font-heading text-5xl md:text-6xl text-luna-glow-blue text-glow mb-2">
               15+
             </div>
-            <div className="font-heading tracking-widest text-white">
-              AFRICAN NATIONS
-            </div>
+            <div className="font-heading tracking-widest text-white">AFRICAN NATIONS</div>
           </div>
           <div className="text-center md:border-l md:border-r border-luna-royal-blue/30">
             <div className="font-heading text-5xl md:text-6xl text-luna-glow-blue text-glow mb-2">

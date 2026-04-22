@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import { MentorsClientPage } from './client-page';
 
 export const metadata: Metadata = {
-  title: 'Resources - LUNA',
+  title: 'Resources - L.U.N.A',
   description:
     'Connect with Africa’s leading space professionals and access valuable resources.',
 };

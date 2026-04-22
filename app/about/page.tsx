@@ -4,7 +4,7 @@ import { team } from '../constant';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'About | LUNA',
+  title: 'About | L.U.N.A',
   description: 'Learn about Loapi Unified Nexus Afrispace.',
 };
 
@@ -13,7 +13,7 @@ export default function About() {
     <main className="pt-40 md:pt-50 pb-24">
       <div className="container mx-auto px-6 mb-16 text-center">
         <h1 className="font-heading text-5xl md:text-7xl text-white mb-6 tracking-widest text-glow">
-          ABOUT LUNA
+          ABOUT L.U.N.A
         </h1>
         <p className="font-body text-xl text-white max-w-3xl mx-auto">
           Provide access to internships and space programs for experts and academia,

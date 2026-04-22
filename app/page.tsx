@@ -9,7 +9,7 @@ import { Metadata } from 'next';
 import { YouTube } from '@/components/youtube';
 
 export const metadata: Metadata = {
-  title: 'LUNA',
+  title: 'L.U.N.A',
   description: "Africa's journey to the stars.",
 };
 export default function Home() {
@@ -21,8 +21,8 @@ export default function Home() {
         <MissionVision />
         <Programs />
         <Events />
-        <Podcast />
         <YouTube />
+        <Podcast />
         <Newsletter />
       </main>
     </div>

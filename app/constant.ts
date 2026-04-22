@@ -90,10 +90,11 @@ export const events = [
 ];
 
 export const HERO_IMAGES = [
-  'https://images.unsplash.com/photo-1462331940025-496dfbfc7564?w=1920&q=80',
-  'https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1920&q=80',
+  '/images/A.png',
   'https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?w=1920&q=80',
+  'https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1920&q=80',
   'https://images.unsplash.com/photo-1419242902214-272b3f66ee7a?w=1920&q=80',
+  'https://images.unsplash.com/photo-1462331940025-496dfbfc7564?w=1920&q=80',
   'https://images.unsplash.com/photo-1457364887197-9150188c107b?w=1920&q=80',
   'https://images.unsplash.com/photo-1614732414444-096e5f1122d5?w=1920&q=80',
 ];

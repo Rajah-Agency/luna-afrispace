@@ -3,24 +3,24 @@ import Image from 'next/image';
 import { sdgs } from '../constant';
 
 export const metadata: Metadata = {
-  title: 'SDGs | LUNA',
-  description: 'LUNA aligns its mission with the United Nations Sustainable Development Goals.',
+  title: 'SDGs | L.U.N.A',
+  description:
+    'L.U.N.A aligns its mission with the United Nations Sustainable Development Goals.',
 };
 
 export default function SDGs() {
-
   return (
     <main className="pt-40 md:pt-50 pb-24 min-h-screen">
       <div className="container mx-auto px-6">
         {/* Header */}
         <div className="text-center mb-20">
-          <h1 className="font-heading text-5xl md:text-7xl text-white mb-6 tracking-widest text-glow">
-            SDGs
+          <h1 className="font-heading text-5xl md:text-7xl text-white mb-6 tracking-widest text-glow normal-case">
+            Sustainable Development Goals (SDGs)
           </h1>
           <p className="font-body text-xl text-white max-w-3xl mx-auto mb-14">
-            LUNA aligns its mission with the United Nations Sustainable Development Goals,
-            ensuring that Africa's journey to the stars uplifts communities and creates
-            lasting impact on the ground.
+            L.U.N.A aligns its mission with the United Nations (UN) Sustainable
+            Development Goals, ensuring that Africa's journey to the stars uplifts
+            communities and creates lasting impact on the ground.
           </p>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-10">
             {sdgs.map((sdg) => (
@@ -81,7 +81,7 @@ export default function SDGs() {
 
                 <div>
                   <h3 className="font-heading text-sm tracking-widest text-luna-glow-blue mb-4">
-                    OUR INITIATIVES
+                    OUR GOALS
                   </h3>
                   <ul className="space-y-3">
                     {sdg.initiatives.map((initiative, i) => (

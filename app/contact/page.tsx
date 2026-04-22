@@ -9,9 +9,10 @@ import {
 } from 'react-icons/fa6';
 
 import { Metadata } from 'next';
+import { channelName } from '@/constants/youtube.constant';
 
 export const metadata: Metadata = {
-  title: 'Contact Us | LUNA',
+  title: 'Contact Us | L.U.N.A',
   description: 'Get in touch with us.',
 };
 
@@ -126,9 +127,7 @@ export default function Contact() {
                     <h3 className="font-heading text-lg text-white tracking-widest mb-2">
                       EMAIL
                     </h3>
-                    <p className="font-body text-white">
-                      info@lunafrispace.org
-                    </p>
+                    <p className="font-body text-white">info@lunafrispace.org</p>
                   </div>
                 </div>
 
@@ -162,6 +161,7 @@ export default function Contact() {
                   />
                 </a>
                 <a
+                  target="_blank"
                   href="https://twitter.com/lunaafrispace"
                   className="w-14 h-14 bg-luna-deep-navy/50 border border-luna-royal-blue/50 flex items-center justify-center text-white hover:text-white hover:border-luna-glow-blue hover:bg-luna-royal-blue/20 transition-all group"
                 >
@@ -171,6 +171,7 @@ export default function Contact() {
                   />
                 </a>
                 <a
+                  target="_blank"
                   href="https://www.linkedin.com/company/lunafrispace-agency"
                   className="w-14 h-14 bg-luna-deep-navy/50 border border-luna-royal-blue/50 flex items-center justify-center text-white hover:text-white hover:border-luna-glow-blue hover:bg-luna-royal-blue/20 transition-all group"
                 >
@@ -180,7 +181,8 @@ export default function Contact() {
                   />
                 </a>
                 <a
-                  href="#"
+                  target="_blank"
+                  href="https://www.instagram.com/lunaafrispace/"
                   className="w-14 h-14 bg-luna-deep-navy/50 border border-luna-royal-blue/50 flex items-center justify-center text-white hover:text-white hover:border-luna-glow-blue hover:bg-luna-royal-blue/20 transition-all group"
                 >
                   <FaInstagram
@@ -188,15 +190,16 @@ export default function Contact() {
                     className="group-hover:scale-110 transition-transform"
                   />
                 </a>
-                {/* <a
-                  href="#"
+                <a
+                  href={`https://www.youtube.com/${channelName}`}
+                  target="_blank"
                   className="w-14 h-14 bg-luna-deep-navy/50 border border-luna-royal-blue/50 flex items-center justify-center text-white hover:text-white hover:border-luna-glow-blue hover:bg-luna-royal-blue/20 transition-all group"
                 >
                   <FaYoutube
                     size={24}
                     className="group-hover:scale-110 transition-transform"
                   />
-                </a> */}
+                </a>
               </div>
             </div>
           </div>

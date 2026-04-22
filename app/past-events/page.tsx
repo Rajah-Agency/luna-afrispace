@@ -3,12 +3,12 @@ import { pastEvents } from '../constant';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Past Events | LUNA',
-  description: 'Explore our past events, summits, and milestones in the African space journey.',
+  title: 'Past Events | L.U.N.A',
+  description:
+    'Explore our past events, summits, and milestones in the African space journey.',
 };
 
 export default function PastEvents() {
-
   return (
     <main className="pt-40 md:pt-50 pb-24 min-h-screen">
       <div className="container mx-auto px-6">
