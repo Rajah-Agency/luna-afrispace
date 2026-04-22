@@ -1,25 +1,43 @@
 'use client';
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { MenuIcon, XIcon } from 'lucide-react';
 import { navLinks } from '@/app/constant';
 import Image from 'next/image';
 import Link from 'next/link';
 
 export function Navbar() {
+  const [visible, setVisible] = useState(true);
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const lastScrollY = useRef(0);
 
   useEffect(() => {
     const handleScroll = () => {
-      setScrolled(window.scrollY > 50);
+      const current = window.scrollY;
+
+      if (current < 10) {
+        setVisible(true);
+        setScrolled(false);
+      } else if (current > lastScrollY.current) {
+        setVisible(false);
+      } else {
+        setVisible(true);
+        setScrolled(true);
+      }
+
+      lastScrollY.current = current;
     };
-    window.addEventListener('scroll', handleScroll);
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? 'bg-luna-deep-navy/90 backdrop-blur-md py-0 border-b border-luna-royal-blue/30' : 'bg-transparent py-0'}`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-200
+        ${visible ? 'translate-y-0' : '-translate-y-full'}
+        ${scrolled ? 'bg-luna-deep-navy/90 backdrop-blur-md border-b border-luna-royal-blue/30' : 'bg-transparent'}
+      `}
     >
       <div className="container mx-auto px-6 flex items-center justify-between">
         <Link href="/" className="flex items-center">
