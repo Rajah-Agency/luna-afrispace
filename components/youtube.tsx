@@ -74,7 +74,7 @@ export function YouTube() {
 
               {/* Scrollable list — max height so it aligns with player */}
               <div className="space-y-3 max-h-105 overflow-y-auto pr-1 scrollbar-thin scrollbar-track-transparent scrollbar-thumb-luna-royal-blue/40">
-                {videos.map((video) => {
+                {videos.map((video, index) => {
                   const isActive = video.id === activeVideo.id;
                   return (
                     <button
@@ -122,7 +122,7 @@ export function YouTube() {
                           </span>
                           <div className="flex items-center gap-3 mt-1">
                             <span className="font-heading text-xs text-luna-royal-blue">
-                              {video.num}
+                              {String(index + 1).padStart(2, '0')}
                             </span>
                             <span className="font-body text-xs text-white/60">
                               {video.duration}
