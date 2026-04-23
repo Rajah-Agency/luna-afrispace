@@ -150,7 +150,7 @@ export const team = [
   {
     name: 'Natasha Moleele',
     role: 'Founder/President',
-    image: '/images/team-members/natasha-moleele.webp',
+    image: '/images/team-members/natasha-moleele.jpeg',
   },
   {
     name: 'Tumo Fortunate Kedumele',
