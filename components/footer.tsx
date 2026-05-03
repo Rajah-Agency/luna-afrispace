@@ -1,7 +1,13 @@
 import { channelName } from '@/constants/youtube.constant';
 import Image from 'next/image';
 import Link from 'next/link';
-import { FaXTwitter, FaLinkedin, FaInstagram, FaYoutube } from 'react-icons/fa6';
+import {
+  FaXTwitter,
+  FaLinkedin,
+  FaInstagram,
+  FaYoutube,
+  FaTiktok,
+} from 'react-icons/fa6';
 
 export function Footer() {
   return (
@@ -50,6 +56,13 @@ export function Footer() {
                 className="text-white hover:text-luna-glow-blue transition-colors"
               >
                 <FaYoutube size={20} />
+              </a>
+              <a
+                target="_blank"
+                href="https://www.tiktok.com/@luna.afri.space"
+                className="text-white hover:text-luna-glow-blue transition-colors"
+              >
+                <FaTiktok size={20} />
               </a>
             </div>
           </div>
