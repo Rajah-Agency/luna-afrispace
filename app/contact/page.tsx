@@ -182,7 +182,7 @@ export default function Contact() {
                 </a>
                 <a
                   target="_blank"
-                  href="https://www.instagram.com/lunaafrispace/"
+                  href="https://www.instagram.com/officialafrispace/"
                   className="w-14 h-14 bg-luna-deep-navy/50 border border-luna-royal-blue/50 flex items-center justify-center text-white hover:text-white hover:border-luna-glow-blue hover:bg-luna-royal-blue/20 transition-all group"
                 >
                   <FaInstagram

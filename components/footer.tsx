@@ -144,7 +144,7 @@ export function Footer() {
               <li>
                 <a
                   target="_blank"
-                  href="https://www.instagram.com/lunaafrispace/"
+                  href="https://www.instagram.com/officialafrispace/"
                   className="font-body text-sm text-white hover:text-luna-glow-blue transition-colors"
                 >
                   Instagram
