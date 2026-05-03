@@ -1,5 +1,10 @@
 export const videos = [
   {
+    id: 'iNd81OA8dJ8',
+    title: `We Mentored Future Space Leaders in Zimbabwe 🇿🇼 | LUNA Impact`,
+    duration: '2 min',
+  },
+  {
     id: '-NPtdqQSOTE',
     title: `Women of the Stars part 2`,
     duration: '125 min',
