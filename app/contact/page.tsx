@@ -10,6 +10,7 @@ import {
 
 import { Metadata } from 'next';
 import { channelName } from '@/constants/youtube.constant';
+import { socials } from '@/constants/socials.constant';
 
 export const metadata: Metadata = {
   title: 'Contact Us | L.U.N.A',
@@ -152,7 +153,7 @@ export default function Contact() {
               </h2>
               <div className="flex space-x-4">
                 <a
-                  href="https://www.facebook.com/lunaafrispace"
+                  href={socials.facebook}
                   className="w-14 h-14 bg-luna-deep-navy/50 border border-luna-royal-blue/50 flex items-center justify-center text-white hover:text-white hover:border-luna-glow-blue hover:bg-luna-royal-blue/20 transition-all group"
                 >
                   <FaFacebook
@@ -162,7 +163,7 @@ export default function Contact() {
                 </a>
                 <a
                   target="_blank"
-                  href="https://twitter.com/lunaafrispace"
+                  href={socials.twitter}
                   className="w-14 h-14 bg-luna-deep-navy/50 border border-luna-royal-blue/50 flex items-center justify-center text-white hover:text-white hover:border-luna-glow-blue hover:bg-luna-royal-blue/20 transition-all group"
                 >
                   <FaXTwitter
@@ -172,7 +173,7 @@ export default function Contact() {
                 </a>
                 <a
                   target="_blank"
-                  href="https://www.linkedin.com/company/lunafrispace-agency"
+                  href={socials.linkedin}
                   className="w-14 h-14 bg-luna-deep-navy/50 border border-luna-royal-blue/50 flex items-center justify-center text-white hover:text-white hover:border-luna-glow-blue hover:bg-luna-royal-blue/20 transition-all group"
                 >
                   <FaLinkedin
@@ -182,7 +183,7 @@ export default function Contact() {
                 </a>
                 <a
                   target="_blank"
-                  href="https://www.instagram.com/officialafrispace/"
+                  href={socials.instagram}
                   className="w-14 h-14 bg-luna-deep-navy/50 border border-luna-royal-blue/50 flex items-center justify-center text-white hover:text-white hover:border-luna-glow-blue hover:bg-luna-royal-blue/20 transition-all group"
                 >
                   <FaInstagram

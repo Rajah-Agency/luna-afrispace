@@ -1,3 +1,4 @@
+import { socials } from '@/constants/socials.constant';
 import { channelName } from '@/constants/youtube.constant';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -31,35 +32,35 @@ export function Footer() {
             <div className="flex space-x-4">
               <a
                 target="_blank"
-                href="https://x.com/lunaAFRISPACE"
+                href={socials.twitter}
                 className="text-white hover:text-luna-glow-blue transition-colors"
               >
                 <FaXTwitter size={20} />
               </a>
               <a
                 target="_blank"
-                href="https://www.linkedin.com/company/lunafrispace-agency"
+                href={socials.linkedin}
                 className="text-white hover:text-luna-glow-blue transition-colors"
               >
                 <FaLinkedin size={20} />
               </a>
               <a
                 target="_blank"
-                href="https://www.instagram.com/lunaafrispace/"
+                href={socials.instagram}
                 className="text-white hover:text-luna-glow-blue transition-colors"
               >
                 <FaInstagram size={20} />
               </a>
               <a
                 target="_blank"
-                href={`https://www.youtube.com/${channelName}`}
+                href={socials.youtube}
                 className="text-white hover:text-luna-glow-blue transition-colors"
               >
                 <FaYoutube size={20} />
               </a>
               <a
                 target="_blank"
-                href="https://www.tiktok.com/@luna.afri.space"
+                href={socials.tiktok}
                 className="text-white hover:text-luna-glow-blue transition-colors"
               >
                 <FaTiktok size={20} />

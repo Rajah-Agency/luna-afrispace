@@ -4,6 +4,7 @@ import { CirclePlayIcon, PlayIcon } from 'lucide-react';
 import { useParallax } from '../hooks/useParallax';
 import { episodes } from '../app/constant';
 import Image from 'next/image';
+import { socials } from '@/constants/socials.constant';
 
 export function Podcast() {
   const { ref, offset } = useParallax(0.35);
@@ -98,15 +99,12 @@ export function Podcast() {
                 SUBSCRIBE ON
               </h4>
               <div className="flex flex-wrap gap-6">
-                {['Spotify', 'Apple Podcasts', 'YouTube'].map((platform) => (
-                  <a
-                    key={platform}
-                    href="#"
-                    className="font-heading tracking-widest text-lg text-luna-glow-blue hover:text-luna-ice-white transition-colors hover:text-glow"
-                  >
-                    {platform}
-                  </a>
-                ))}
+                <a
+                  href={socials.spotify}
+                  className="font-heading tracking-widest text-lg text-luna-glow-blue hover:text-luna-ice-white transition-colors hover:text-glow"
+                >
+                  Spotify
+                </a>
               </div>
             </div>
           </div>
